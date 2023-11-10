@@ -57,6 +57,10 @@ def update_and_save_database_info(directory, json_output_file):
     dir_info = database_monitor(directory)
     save_to_json(dir_info, json_output_file)
 
+def metadata(metadata_filepath):
+    with open(metadata_filepath,'r', encoding='utf-8') as record:
+        return json.load(record)
+
 def parse_crud(user_input):
     # crud patterns
     create_pattern = r"CREATE TABLE (\w+) FROM (.+);"
@@ -142,9 +146,8 @@ def store_chunks(csv_path, chunk_size, output_dir):
         print(f"An error occurred: {e}")
 
 
-def metadata():
-    with open('database/database_info.json','r', encoding='utf-8') as record:
-        metadata = json.load(record)
+
+
 
 
 def user_interact():
@@ -153,7 +156,10 @@ def user_interact():
 
     # Run database monitor before user input
     update_and_save_database_info(database_directory, json_output_file)
-
+    data = metadata('database/database_info.json') # list of dic
+    table_names = []
+    for dic in data:
+        table_names.append(dic["directory_name"])
 
     user_input = input("Enter the command (or type 'exit' to stop): ")
     if user_input.lower() == 'exit':  # Check if the user wants to exit the loop
@@ -165,21 +171,41 @@ def user_interact():
             if crud['query_type'] == 'create':
                 in_path = crud['input_path']
                 out_path = crud['table_name']
-                if out_path not in metadata:
+                if out_path not in table_names:
                     store_chunks(in_path,100,out_path)
                     print(crud)
                     print(f"CSV data from {in_path} has been stored in JSON format in the directory '{out_path}'.")
+                else:
+                    print(f"Table {out_path} already exists.")
+                    return
 
             elif crud["query_type"] == "drop":
                 path_to_delete = crud['table_name']
-                shutil.rmtree(f'database/{path_to_delete}')
-                print(f"Table {path_to_delete} has been deleted.")
+                if path_to_delete in table_names:
+                    shutil.rmtree(f'database/{path_to_delete}')
+                    print(f"Table {path_to_delete} has been deleted.")
+                else:
+                    print(f"Table {path_to_delete} doesn't exist.")
+                    return
 
             elif crud["query_type"] == "inserting":
-                # find a chunk not exceed 100
+                # check then find a chunk not exceed 100 and insert
                 table_name = crud['table_name']
                 columns = crud["columns"]
                 values = crud["values"]
+                if table_name not in table_names:
+                    print(f"Table {table_name} doesn't exist.")
+                    return
+                else:
+                    for x in data:
+                        if x["directory_name"] == table_name:
+
+                            if re.compile() in columns:
+                                # if set(columns) <= set(x["attributes"]): sql need to check columns, nosql is fine
+                                with open() x["num_files"] as f:
+
+
+
                 print(crud)
 
 
