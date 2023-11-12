@@ -1,80 +1,155 @@
 import csv
 import json
 import os
-import re
-import shutil
+from createDB import DatabaseManager
 
 class TableManager:
-    def __init__(self, db_path, db_type):
-        self.db_path = db_path
-        self.db_type = db_type
-        self.metadata_path = os.path.join(db_path, f"{os.path.basename(db_path)}_metadata.txt")
-        self.metadata = self._read_metadata()
+    def __init__(self, command_type=None, table_name=None,
+                columns=None, primary_key=None, foreign_key=None, input_path=None):
+        self.command_type = command_type
+        self.table_name = table_name
+        self.columns = columns
+        self.primary_key = primary_key
+        self.foreign_key = foreign_key
+        self.input_path = input_path
+        self.db_info = DatabaseManager().monitor()
 
-    def _read_metadata(self):
-        # Read existing metadata or create new
-        if os.path.exists(self.metadata_path):
-            with open(self.metadata_path, 'r') as file:
-                return json.load(file)
-        else:
-            return {'database_name': os.path.basename(self.db_path), 'tables': {}}
 
-    def _write_metadata(self):
-        # Write metadata to file
-        with open(self.metadata_path, 'w') as file:
-            json.dump(self.metadata, file, indent=4)
 
-    def _parse_create_query(self, query):
-        # Parse CREATE TABLE query
-        pattern = r"CREATE TABLE (\w+) \((.+)\)"
-        match = re.match(pattern, query)
-        if not match:
-            raise ValueError("Invalid CREATE TABLE query.")
+    def show_table(self):
+        if self.command_type == "show_table":
+            for db in self.db_info:
+                if db['database_path'] == db_path:
+                    print(db['tables'])
 
-        table_name, columns = match.groups()
-        columns = columns.split(',')
-        columns_info = {}
-        for column in columns:
-            col_parts = column.strip().split()
-            col_name = col_parts[0]
-            constraints = ' '.join(col_parts[1:])
-            columns_info[col_name] = {'constraints': constraints}
-        return table_name, columns_info
+    def new_table_nosql(self):
+        data = {column: None for column in self.columns}
+        os.makedirs(f'{db_path}/{self.table_name}')
+        # create empty file
+        with open(f'{db_path}/{self.table_name}/chunk_1.json', 'w', encoding='utf-8') as f:
+            json.dump([data], f, indent=4)
+            # create table metadata file
+        with open(f'{db_path}/{self.table_name}/metadata.json', 'w', encoding='utf-8') as f:
+            obj = {
+                    "table_name": self.table_name,
+                    "columns": self.columns,
+                    "primary key": self.primary_key,
+                    "foreign key": self.foreign_key
+                                    }
+            json.dump(obj, f, indent=4)
+        print(f"Table {self.table_name} created in JSON.")
 
-    def create_table(self, query):
-        # Create a new table based on the query
-        table_name, columns_info = self._parse_create_query(query)
-        table_path = os.path.join(self.db_path, f"{table_name}.csv")
+    def new_table_relational(self):
+        os.makedirs(f'{db_path}/{self.table_name}')
+        # create empty file
+        with open(f'{db_path}/{self.table_name}/chunk_1.csv', 'w', newline='', encoding='utf-8') as csvfile:
+            writer = csv.DictWriter(csvfile, fieldnames=self.columns)
+            writer.writeheader()  # Write the headers to the CSV file
+            # create table metadata file
+        with open(f'{db_path}/{self.table_name}/metadata.json', 'w', encoding='utf-8') as f:
+            obj = {
+                    "table_name": self.table_name,
+                    "columns": self.columns,
+                    "primary key": self.primary_key,
+                    "foreign key": self.foreign_key
+                                    }
+            json.dump(obj, f, indent=4)
+        print(f"Table {self.table_name} created in csv.")
 
-        if os.path.exists(table_path):
-            raise FileExistsError(f"A table with the name '{table_name}' already exists.")
 
-        with open(table_path, 'w', newline='') as file:
-            writer = csv.DictWriter(file, fieldnames=columns_info.keys())
-            writer.writeheader()
+    def create_table(self):
+        # Input: table; columns; primary key; foreign key{self_column, ref_table, ref_column}
+        # Output:  “table successfully created” or print error message
+        table_info = []
+        if self.command_type == "create_table":
+            for db in self.db_info:
+                if db['database_path'] == db_path:
+                    if db_path.endswith('_nosql'):
+                        # empty db
+                        if len(db['tables']) == 0:
+                            # check primary key
+                            if self.primary_key is None:
+                                print("Primary key needed!")
+                            else:
+                                # check foreign key
+                                if self.foreign_key is not None:
+                                    print(f'You are creating the first table in database. No table existing to refer.')
+                                else:
+                                    self.new_table_nosql()
 
-        self.metadata['tables'][table_name] = columns_info
-        self._write_metadata()
+                        # db not empty
+                        else:
+                            for table in db['tables']:
+                                table_metadata_path = f'{table["table_path"]}/metadata.json'
+                                with open(table_metadata_path, 'r', encoding='utf-8') as f:
+                                    table_info.append(json.load(f))
+                            # check primary key
+                            if self.primary_key is None:
+                                print("Please designate a primary key for your table.")
+                            else:
+                                # case when no foreign key
+                                if self.foreign_key is None:
+                                    self.new_table_nosql()
+                                # case when exists foreign key
+                                else:
+                                    for key in self.foreign_key:
+                                        # foreign key must refer to primary key
+                                        for info in table_info:
+                                            if info['table_name'] == key['ref_table'] and info['primary key'] == key['ref_column']:
+                                                self.new_table_nosql()
+                                            else:
+                                                print("Check your foreign key!")
 
-    def import_table(self, csv_path):
-        # Import a table from CSV file
-        table_name = os.path.basename(csv_path).split('.')[0]
-        table_path = os.path.join(self.db_path, f"{table_name}.{self.db_type}")
-        if self.db_type == 'csv':
-            shutil.copyfile(csv_path, table_path)
-        elif self.db_type == 'json':
-            with open(csv_path, 'r') as file:
-                reader = csv.DictReader(file)
-                data = [row for row in reader]
-            with open(table_path, 'w') as file:
-                json.dump(data, file, indent=4)
-        self.metadata['tables'][table_name] = {'imported': True}
-        self._write_metadata()
+                    elif db_path.endswith('_relational'):
+                        # empty db
+                        if len(db['tables']) == 0:
+                            # check primary key
+                            if self.primary_key is None:
+                                print("Primary key needed.")
+                            else:
+                            # check foreign key
+                                if self.foreign_key is not None:
+                                    print(f'You are creating the first table in database. No table existing to refer.')
+                                else:
+                                    self.new_table_relational()
 
-# Example usage
+                        # db not empty
+                        else:
+                            for table in db['tables']:
+                                table_metadata_path = f'{table["table_path"]}/metadata.json'
+                                with open(table_metadata_path, 'r', encoding='utf-8') as f:
+                                    table_info.append(json.load(f))
+                            # check primary key
+                            if self.primary_key is None:
+                                print("Please designate a primary key for your table.")
+                            else:
+                                # case when no foreign key
+                                if self.foreign_key is None:
+                                    self.new_table_relational()
+                                # case when exists foreign key
+                                else:
+                                    for key in self.foreign_key:
+                                        # foreign key must refer to primary key
+                                        for info in table_info:
+                                            if info['table_name'] == key['ref_table'] and info['primary key'] == key['ref_column']:
+                                                self.new_table_relational()
+                                            else:
+                                                print("Check your foreign key!")
+
+
+
+
+
+
+
+
+
+
+
+
 if __name__ == "__main__":
-    tm = TableManager("./Relational/test_db", "Relational")
-    tm.create_table("CREATE TABLE employees (id{primary}, name, age{foreign reference department$dept_id})")
-    print("Table 'employees' created.")
-    tm.import_table("./basic.csv")
-    print("Table 'employees' imported.")
+    db_path = "root/xyz_relational"
+    test = TableManager(command_type="create_table", table_name="buyer", columns=['brand','price'], primary_key='4s_store')
+    test.create_table()
+
+
