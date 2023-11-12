@@ -74,7 +74,7 @@ class DatabaseManager:
         if self.command_type == "use_database":
             records = self.monitor()
             db_names = []
-            db_path = ""
+            dbpath = ""
             for record in records:
                 db_names.append(record['database_name'])
             if f'{self.database_name}_{self.database_type}' not in db_names:
@@ -82,9 +82,9 @@ class DatabaseManager:
             else:
                 for record in records:
                     if record['database_name'] == f'{self.database_name}_{self.database_type}':
-                        db_path = record['database_path']
+                        dbpath = record['database_path']
                 print(f'Using {self.database_name}.')
-                return db_path
+                return dbpath
 
     def drop_database(self):
         if self.command_type == "drop_database":
