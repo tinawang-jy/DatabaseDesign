@@ -2,6 +2,7 @@ import csv
 import json
 import os
 from createDB import DatabaseManager
+import shutil
 
 class TableManager:
     def __init__(self, command_type=None, table_name=None,
@@ -329,6 +330,38 @@ class TableManager:
                                             if not foreign_key_is_valid:
                                                 print("Check your foreign key!")
 
+    def drop_table(self):
+        if self.command_type == "drop_table":
+            table_info = []
+            table_valid = True
+            for db in self.db_info:
+                if db['database_path'] == db_path:
+                    for table in db['tables']:
+                        table_metadata_path = f'{table["table_path"]}/metadata.json'
+                        with open(table_metadata_path, 'r', encoding='utf-8') as f:
+                            table_info.append(json.load(f))
+                    tb_names = []
+                    for tb in table_info:
+                        tb_names.append(tb["table_name"])
+                    # check if this tables exist
+                    if self.table_name not in tb_names:
+                        print(f"Then table {self.table_name} you want to drop doesn't exist.")
+
+                    else:
+                        for tb in table_info:
+                            # check if this table is referred
+                            if tb["foreign key"] is not None:
+                                for fk in tb["foreign key"]:
+                                    if fk["ref_table"] == self.table_name:
+                                        print(f'This table is referred by another table {tb["table_name"]}')
+                                        table_valid = False
+                                        break
+
+                        if table_valid:
+                            path_to_delete = f'{db_path}/{self.table_name}'
+                            shutil.rmtree(path_to_delete)
+                            print(f'Table {self.table_name} is dropped.')
+
 
 
 
@@ -342,14 +375,13 @@ class TableManager:
 
 
 if __name__ == "__main__":
-    db_path = "root/xyz_relational"
+
+    db_path = "root/abc_nosql"
             # Input: table; file path; primary key; foreign key{self_column”, “ref_table”, “ref_column”}
 
-    test = TableManager(command_type="import_table", table_name="basic", primary_key='id', input_path='basic.csv',foreign_key=[{"self_column":'id',
-                                                                                                                                "ref_table":'buyer',
-                                                                                                                               "ref_column":'4s_store'}])
+    test = TableManager(command_type="drop_table", table_name="happy")
     #test2 = TableManager(command_type="create_table", table_name="happy", primary_key='id', columns=['id','me'])
 
-    test.import_table()
+    test.drop_table()
 
 
