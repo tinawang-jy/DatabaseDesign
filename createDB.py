@@ -1,6 +1,9 @@
 import json
 import os
 import shutil
+import csv
+from config import db_path
+import config
 
 class DatabaseManager:
     def __init__(self, command_type=None, database_name=None, database_type=None):
@@ -25,6 +28,7 @@ class DatabaseManager:
             print(self.monitor())
 
     def monitor(self):
+        global db_path
         metadata = []
 
         # Scan all db in the directory
@@ -84,6 +88,7 @@ class DatabaseManager:
                     if record['database_name'] == f'{self.database_name}_{self.database_type}':
                         dbpath = record['database_path']
                 print(f'Using {self.database_name}.')
+                config.set_db_path(dbpath)
                 return dbpath
 
     def drop_database(self):
@@ -101,5 +106,5 @@ class DatabaseManager:
 
 
 if __name__ == "__main__":
-    test = DatabaseManager("drop_database","xyz","relational")
-    test.drop_database()
+    test = DatabaseManager("create_database","xyz","relational")
+    test.create_database()

@@ -4,7 +4,7 @@ import operator
 import csv
 from createDB import DatabaseManager
 from createTable import DatabaseManager
-
+from config import db_path
 '''Insert
 Input: table_name, columns=[], values=[]
 Output: 
@@ -21,19 +21,24 @@ Output:
 
 class Updater:
     def __init__(self, command_type=None, table_name=None,
-                columns=None, condition=None, target_condition=None, values=None):
+                columns=None, condition=None, target_condition=None, values=None,db_path=None):
         self.command_type = command_type
         self.table_name = table_name
         self.columns = columns
         self.condition = condition
         self.target_condition = target_condition
         self.values = values
+        self.db_path = db_path
         self.db_info = DatabaseManager().monitor()
-        self.table_info = self.monitor() # a list of dict
-        _, _, database_type = db_path.rpartition('_')
-        self.db_type = database_type
+        self.table_info = self.monitor(self.db_path) # a list of dict
+        self.db_type = self.get_dbtype(self.db_path)
 
-    def monitor(self):
+
+    def get_dbtype(self,db_path):
+        _, _, database_type = db_path.rpartition('_')
+        return database_type
+
+    def monitor(self,db_path):
         table_info = []
         for db in self.db_info:
                 if db['database_path'] == db_path:
@@ -97,7 +102,7 @@ class Updater:
         return arr
 
 
-    def write(self, columns, values, dbtype):
+    def write(self, columns, values, dbtype,db_path):
         path = f"{db_path}/{self.table_name}"
         if dbtype == 'nosql':
             # Find the last JSON file in the directory
@@ -137,7 +142,7 @@ class Updater:
 
 
 
-    def insert(self):
+    def insert(self,db_path):
         if self.command_type == "inserting":
             # check if table exists
             tb_names = []
@@ -154,13 +159,13 @@ class Updater:
                             return
                         else:
                 # check if table refers to other table
-                            if tb["foreign key"] is None:
+                            if not tb["foreign key"]:
                                 pair = dict(zip(self.columns,self.values))
                                 pk_col = tb["primary key"]
                                 duplicate = self.check_value_exist(value_to_check=pair[pk_col],col_name=pk_col,path=f"{db_path}/{self.table_name}",dbtype=self.db_type)
                                 # false means no duplicate
                                 if duplicate is False:
-                                    self.write(columns=self.columns, values=self.values, dbtype=self.db_type)
+                                    self.write(columns=self.columns, values=self.values, dbtype=self.db_type, db_path=db_path)
                                 else:
                                     print("Primary key value duplicate.")
                             else:
@@ -174,7 +179,7 @@ class Updater:
                                     # check duplicate pk
                                     duplicate = self.check_value_exist(value_to_check=pair[pk_col],col_name=pk_col,path=f"{db_path}/{self.table_name}",dbtype=self.db_type)
                                     if fk_validation and (duplicate is False):
-                                        self.write(columns=self.columns, values=self.values, dbtype=self.db_type)
+                                        self.write(columns=self.columns, values=self.values, dbtype=self.db_type,db_path=db_path)
                                     else:
                                         if fk_validation == False:
                                             print("Foreign key value doesn't exist in foreign table.")
@@ -208,7 +213,7 @@ class Updater:
                         writer.writerows(updated_data)
         return print(f"Columns {columns} removed from all {dbtype} files in {dir_path}")
 
-    def delete_col(self):
+    def delete_col(self,db_path):
         # Input: table, columns
         if self.command_type == "deleting_column":
             # check table exist
@@ -243,7 +248,7 @@ class Updater:
         return False
 
 
-    def filter_check_del(self, dbtype:str, ref_by:list):
+    def filter_check_del(self, dbtype:str, ref_by:list, db_path):
         ops = {
     '>': operator.gt,
     '<': operator.lt,
@@ -308,7 +313,7 @@ class Updater:
                     # else, delete row
 
 
-    def delete_row(self):
+    def delete_row(self,db_path):
         if self.command_type == "deleting_row":
             # Input: table, condition{variable, method, value}
             # DELETE FROM cars IF price > “40000”;
@@ -330,15 +335,15 @@ class Updater:
 
                             referred_by = [] # a list of tb_info dict that refer to self.table_name
                             for tb in self.table_info:
-                                if tb["foreign key"] is not None:
+                                if tb["foreign key"]:
                                     for fk in tb["foreign key"]:
                                         if fk["ref_table"] == self.table_name:
                                             referred_by.append(tb)
 
 
-                            self.filter_check_del(dbtype=self.db_type, ref_by=referred_by)
+                            self.filter_check_del(dbtype=self.db_type, ref_by=referred_by,db_path=db_path)
 
-    def update_col(self, dbtype:str):
+    def update_col(self, dbtype:str,db_path):
         ops = {
     '>': operator.gt,
     '<': operator.lt,
@@ -397,7 +402,7 @@ class Updater:
                         writer.writerows(rows_to_keep)
                     print(f"Records updated in {file_path}.")
 
-    def update(self):
+    def update(self,db_path):
         '''{
                 "query_type": "updating",
                 "table_name": match.group(1),
@@ -433,7 +438,7 @@ class Updater:
                                 print(f"Column {self.condition['variable']} not exist.")
                                 return
                             else:
-                                self.update_col(dbtype=self.db_type)
+                                self.update_col(dbtype=self.db_type,db_path=db_path)
 
 
 

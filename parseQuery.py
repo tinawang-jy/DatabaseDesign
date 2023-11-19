@@ -27,7 +27,7 @@ class QueryParser:
         self.deleting_column_pattern = r"DELETE \(([^)]+)\) FROM (\w+);"
         self.updating_pattern = r"UPDATE (\w+) SET \(([^)]+)\) IF ([^;]+);"
 
-    def dbParser(self, query):
+    def Parser(self, query):
         if re.match(self.show_database_pattern, query, re.IGNORECASE):
             match = re.match(self.show_database_pattern, query)
             return {
@@ -39,7 +39,7 @@ class QueryParser:
             return {
                 "query_type": "create_database",
                 "database_name": match.group(1),
-                "type_of_database": match.group(2)
+                "type_of_database": match.group(2).lower()
             }
         
         elif re.match(self.use_database_pattern, query, re.IGNORECASE):
@@ -47,7 +47,7 @@ class QueryParser:
             return {
                 "query_type": "use_database",
                 "database_name": match.group(1),
-                "type_of_database": match.group(2)
+                "type_of_database": match.group(2).lower()
             } 
         
         elif re.match(self.drop_database_pattern, query, re.IGNORECASE):
@@ -55,14 +55,11 @@ class QueryParser:
             return {
                 "query_type": "drop_database",
                 "database_name": match.group(1),
-                "type_of_database": match.group(2)
+                "type_of_database": match.group(2).lower()
             }               
 
-        else:
-            return {"error": "Invalid query format! Please restate your request!"}
                    
-    def tableParser(self, query):
-        if re.match(self.show_table_pattern, query, re.IGNORECASE):
+        elif re.match(self.show_table_pattern, query, re.IGNORECASE):
             match = re.match(self.show_table_pattern, query)
             return  {
                 "query_type": "show_table"
@@ -150,11 +147,9 @@ class QueryParser:
                 "table_name": match.group(1)
             }
 
-        else:
-            return {"error": "Invalid query format! Please restate your request!"}
+
         
-    def operatorParse(self, query):
-        if re.match(self.projection_pattern, query, re.IGNORECASE):
+        elif re.match(self.projection_pattern, query, re.IGNORECASE):
             match = re.match(self.projection_pattern, query)
             return {
                 "query_type": "projection",
@@ -224,12 +219,9 @@ class QueryParser:
                 "order_by_column": match.group(3),
                 "method": match.group(4)
             }
+
         
-        else:
-            return {"error": "Invalid query format! Please restate your request!"}
-        
-    def modificationParser(self, query):
-        if re.match(self.inserting_pattern, query, re.IGNORECASE):
+        elif re.match(self.inserting_pattern, query, re.IGNORECASE):
             match = re.match(self.inserting_pattern, query)
             return {
                 "query_type": "inserting",
@@ -318,26 +310,6 @@ if __name__ == "__main__":
     deleting_column_pattern = "DELETE (name, price) FROM cars;"
     updating_pattern = "UPDATE cars SET (price = “over 100k”) IF price > “100000”;"
 
-    qp = QueryParser()
+    print(QueryParser().Parser("show database;"))
 
-    print(qp.dbParser(show_database_pattern))
-    print(qp.dbParser(create_database_pattern))
-    print(qp.dbParser(use_database_pattern))
-    print(qp.dbParser(drop_database_pattern))
-
-    print(qp.tableParser(show_table_pattern))
-    print(qp.tableParser(create_table_pattern))
-    print(qp.tableParser(import_table_pattern))
-    print(qp.tableParser(drop_table_pattern))
-
-    print(qp.operatorParse(projection_pattern))
-    print(qp.operatorParse(filtering_pattern))
-    print(qp.operatorParse(join_pattern))
-    print(qp.operatorParse(group_agg_pattern))
-    print(qp.operatorParse(ordering_pattern))
-
-    print(qp.modificationParser(inserting_pattern))
-    print(qp.modificationParser(deleting_row_pattern))
-    print(qp.modificationParser(deleting_column_pattern))
-    print(qp.modificationParser(updating_pattern))
 

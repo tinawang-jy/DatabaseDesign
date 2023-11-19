@@ -3,6 +3,7 @@ import json
 import os
 from createDB import DatabaseManager
 import shutil
+from config import db_path
 
 class TableManager:
     def __init__(self, command_type=None, table_name=None,
@@ -17,13 +18,13 @@ class TableManager:
 
 
 
-    def show_table(self):
+    def show_table(self,db_path):
         if self.command_type == "show_table":
             for db in self.db_info:
                 if db['database_path'] == db_path:
                     print(db['tables'])
 
-    def new_table_nosql(self):
+    def new_table_nosql(self,db_path):
         data = {column: None for column in self.columns}
         os.makedirs(f'{db_path}/{self.table_name}')
         # create empty file
@@ -40,7 +41,7 @@ class TableManager:
             json.dump(obj, f, indent=4)
         print(f"Table {self.table_name} created in JSON.")
 
-    def new_table_relational(self):
+    def new_table_relational(self,db_path):
         os.makedirs(f'{db_path}/{self.table_name}')
         # create empty file
         with open(f'{db_path}/{self.table_name}/chunk_1.csv', 'w', newline='', encoding='utf-8') as csvfile:
@@ -58,7 +59,7 @@ class TableManager:
         print(f"Table {self.table_name} created in csv.")
 
 
-    def create_table(self):
+    def create_table(self,db_path):
         # Input: table; columns; primary key; foreign key{self_column, ref_table, ref_column}
         # Output:  “table successfully created” or print error message
         table_info = []
@@ -79,14 +80,14 @@ class TableManager:
                             # empty db
                             if len(db['tables']) == 0:
                                 # check primary key
-                                if self.primary_key is None:
+                                if self.primary_key == []:
                                     print("Primary key needed!")
                                 else:
                                     # check foreign key
-                                    if self.foreign_key is not None:
+                                    if self.foreign_key != []:
                                         print(f'You are creating the first table in database. No table existing to refer.')
                                     else:
-                                        self.new_table_nosql()
+                                        self.new_table_nosql(db_path)
 
                             # db not empty
                             else:
@@ -95,19 +96,19 @@ class TableManager:
                                     with open(table_metadata_path, 'r', encoding='utf-8') as f:
                                         table_info.append(json.load(f))
                                 # check primary key
-                                if self.primary_key is None:
+                                if self.primary_key == []:
                                     print("Please designate a primary key for your table.")
                                 else:
                                     # case when no foreign key
-                                    if self.foreign_key is None:
-                                        self.new_table_nosql()
+                                    if self.foreign_key == []:
+                                        self.new_table_nosql(db_path)
                                     # case when exists foreign key
                                     else:
                                         for key in self.foreign_key:
                                             # foreign key must refer to primary key
                                             for info in table_info:
                                                 if info['table_name'] == key['ref_table'] and info['primary key'] == key['ref_column']:
-                                                    self.new_table_nosql()
+                                                    self.new_table_nosql(db_path)
                                                 else:
                                                     print("Check your foreign key!")
 
@@ -115,35 +116,36 @@ class TableManager:
                             # empty db
                             if len(db['tables']) == 0:
                                 # check primary key
-                                if self.primary_key is None:
+                                if not self.primary_key:
                                     print("Primary key needed.")
                                 else:
                                 # check foreign key
-                                    if self.foreign_key is not None:
+                                    if self.foreign_key == []:
                                         print(f'You are creating the first table in database. No table existing to refer.')
                                     else:
-                                        self.new_table_relational()
+                                        self.new_table_relational(db_path)
 
                             # db not empty
                             else:
                                 # check primary key
-                                if self.primary_key is None:
+                                if self.primary_key == []:
                                     print("Please designate a primary key for your table.")
+
                                 else:
                                     # case when no foreign key
-                                    if self.foreign_key is None:
-                                        self.new_table_relational()
+                                    if not self.foreign_key:
+                                        self.new_table_relational(db_path)
                                     # case when exists foreign key
                                     else:
                                         for key in self.foreign_key:
                                             # foreign key must refer to primary key
                                             for info in table_info:
                                                 if info['table_name'] == key['ref_table'] and info['primary key'] == key['ref_column']:
-                                                    self.new_table_relational()
+                                                    self.new_table_relational(db_path)
                                                 else:
                                                     print("Check your foreign key!")
 
-    def chunk_to_json(self):
+    def chunk_to_json(self,db_path):
         path = f'{db_path}/{self.table_name}'
         chunk_size = 100
         if not os.path.exists(path):
@@ -183,7 +185,7 @@ class TableManager:
         except Exception as e:
             print(f"An error occurred: {e}")
 
-    def chunk_to_csv(self):
+    def chunk_to_csv(self,db_path):
         path = f'{db_path}/{self.table_name}'
         chunk_size = 100  # Define your desired chunk size
         if not os.path.exists(path):
@@ -226,7 +228,7 @@ class TableManager:
         except Exception as e:
             print(f"An error occurred: {e}")
 
-    def import_table(self):
+    def import_table(self,db_path):
         # Input: table; file path; primary key; foreign key{self_column”, “ref_table”, “ref_column”}
         # Output: “table successfully imported” or print error message
         table_info = []
@@ -250,28 +252,28 @@ class TableManager:
                             # empty db
                             if len(db['tables']) == 0:
                                 # check primary key
-                                if self.primary_key is None:
+                                if self.primary_key == []:
                                     print("Primary key needed!")
                                 elif self.primary_key not in headers:
                                     print("Primary key not in import file.")
                                 else:
                                     # check foreign key
-                                    if self.foreign_key is not None:
+                                    if self.foreign_key != []:
                                         print(f'You are creating the first table in database. No table existing to refer.')
                                     else:
-                                        self.chunk_to_json()
+                                        self.chunk_to_json(db_path)
 
                             # db not empty
                             else:
                                 # check primary key
-                                if self.primary_key is None:
+                                if not self.primary_key:
                                     print("Please designate a primary key for your table.")
                                 elif self.primary_key not in headers:
                                     print("Primary key not in import file.")
                                 else:
                                     # case when no foreign key
-                                    if self.foreign_key is None:
-                                        self.chunk_to_json()
+                                    if self.foreign_key == []:
+                                        self.chunk_to_json(db_path)
                                     # case when exists foreign key
                                     else:
                                         for key in self.foreign_key:
@@ -283,7 +285,7 @@ class TableManager:
                                             for info in table_info:
                                                 if info['table_name'] == key['ref_table'] and info['primary key'] == key['ref_column']:
                                                     foreign_key_is_valid = True
-                                                    self.chunk_to_json()  # Stop checking since we've found a valid foreign key reference
+                                                    self.chunk_to_json(db_path)  # Stop checking since we've found a valid foreign key reference
 
                                             if not foreign_key_is_valid:
                                                 print("Check your foreign key!")
@@ -293,28 +295,28 @@ class TableManager:
                             # empty db
                             if len(db['tables']) == 0:
                                 # check primary key
-                                if self.primary_key is None:
+                                if self.primary_key == []:
                                     print("Primary key needed.")
                                 elif self.primary_key not in headers:
                                     print("Primary key not in import file.")
                                 else:
                                 # check foreign key
-                                    if self.foreign_key is not None:
+                                    if self.foreign_key != []:
                                         print(f'You are creating the first table in database. No table existing to refer.')
                                     else:
-                                        self.chunk_to_csv()
+                                        self.chunk_to_csv(db_path)
 
                             # db not empty
                             else:
                                 # check primary key
-                                if self.primary_key is None:
+                                if self.primary_key is []:
                                     print("Please designate a primary key for your table.")
                                 elif self.primary_key not in headers:
                                     print("Primary key not in import file.")
                                 else:
                                     # case when no foreign key
-                                    if self.foreign_key is None:
-                                        self.chunk_to_csv()
+                                    if not self.foreign_key:
+                                        self.chunk_to_csv(db_path)
                                     # case when exists foreign key
                                     else:
                                         for key in self.foreign_key:
@@ -325,12 +327,12 @@ class TableManager:
                                             for info in table_info:
                                                 if info['table_name'] == key['ref_table'] and info['primary key'] == key['ref_column']:
                                                     foreign_key_is_valid = True
-                                                    self.chunk_to_csv()  # Stop checking since we've found a valid foreign key reference
+                                                    self.chunk_to_csv(db_path)  # Stop checking since we've found a valid foreign key reference
 
                                             if not foreign_key_is_valid:
                                                 print("Check your foreign key!")
 
-    def drop_table(self):
+    def drop_table(self,db_path):
         if self.command_type == "drop_table":
             table_info = []
             table_valid = True
@@ -350,7 +352,7 @@ class TableManager:
                     else:
                         for tb in table_info:
                             # check if this table is referred
-                            if tb["foreign key"] is not None:
+                            if tb["foreign key"]:
                                 for fk in tb["foreign key"]:
                                     if fk["ref_table"] == self.table_name:
                                         print(f'This table is referred by another table {tb["table_name"]}')
@@ -364,24 +366,14 @@ class TableManager:
 
 
 
-
-
-
-
-
-
-
-
-
-
 if __name__ == "__main__":
 
-    db_path = "root/abc_nosql"
+    db_path = "root/xyz_relational"
             # Input: table; file path; primary key; foreign key{self_column”, “ref_table”, “ref_column”}
 
-    test = TableManager(command_type="drop_table", table_name="happy")
+    test = TableManager(command_type="import_table", table_name="basic", input_path="basic.csv", primary_key="host_id")
     #test2 = TableManager(command_type="create_table", table_name="happy", primary_key='id', columns=['id','me'])
 
-    test.drop_table()
+    test.import_table()
 
 
