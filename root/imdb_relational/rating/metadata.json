@@ -1,0 +1,10 @@
+{
+    "table_name": "rating",
+    "columns": [
+        "tconst",
+        "averageRating",
+        "numVotes"
+    ],
+    "primary key": "tconst",
+    "foreign key": []
+}

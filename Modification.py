@@ -192,7 +192,7 @@ class Updater:
 
         for file_name in os.listdir(dir_path):
             file_path = os.path.join(dir_path, file_name)
-            if os.path.isfile(file_path) and file_path.lower().endswith(file_extension):
+            if os.path.isfile(file_path) and file_path.lower().endswith(file_extension) and 'metadata' not in file_path:
                 if dbtype == 'nosql':
                     # Process JSON files
                     with open(file_path, 'r+', encoding='utf-8') as file:
@@ -220,7 +220,6 @@ class Updater:
             # check table exist
             tb_names = []
             for tb in self.table_info:
-                print(tb)
                 tb_names.append(tb["table_name"])
             if self.table_name not in tb_names:
                 print(f"Table {self.table_name} doesn't exist.")
@@ -280,7 +279,8 @@ class Updater:
                         updated_data = []
 
                         for record in data:
-                            filter = ops[self.condition['method']](record[self.condition['variable']],self.condition['value'])
+                            if record[self.condition['variable']] != "":
+                                filter = ops[self.condition['method']](int(record[self.condition['variable']].replace('“', '').replace('”', '')),int(self.condition['value'].replace('“', '').replace('”', '')))
                             if filter and (not ref_by or not self.check_value_exist_in_ref(record[pk], ref_by, pk,dbtype)):
                                 continue  # Skip adding this record to updated_data
                             updated_data.append(record)
@@ -294,7 +294,8 @@ class Updater:
                     with open(file_path, 'r', newline='', encoding='utf-8') as file:
                         reader = csv.DictReader(file)
                         for row in reader:
-                            filter = ops[self.condition['method']](row[self.condition['variable']],self.condition['value'])
+                            if row[self.condition['variable']] != "":
+                                filter = ops[self.condition['method']](int(row[self.condition['variable']].replace('“', '').replace('”', '')),int(self.condition['value'].replace('“', '').replace('”', '')))
                             if filter and (not ref_by or not self.check_value_exist_in_ref(row[pk], ref_by, pk,dbtype)):
                                 continue
                             rows_to_keep.append(row)
@@ -336,13 +337,11 @@ class Updater:
                         else:
 
                             referred_by = [] # a list of tb_info dict that refer to self.table_name
-                            for tb in self.table_info:
-                                if tb["foreign key"]:
-                                    for fk in tb["foreign key"]:
+                            for table in self.table_info:
+                                if table["foreign key"]:
+                                    for fk in table["foreign key"]:
                                         if fk["ref_table"] == self.table_name:
-                                            referred_by.append(tb)
-
-
+                                            referred_by.append(table)
                             self.filter_check_del(dbtype=self.db_type, ref_by=referred_by,db_path=db_path)
 
     def update_col(self, dbtype:str,db_path):
@@ -355,25 +354,21 @@ class Updater:
     '<=': operator.le
 }
         path = f"{db_path}/{self.table_name}"
-        pk = None
-        for tb in self.table_info:
-            if tb["table_name"] == self.table_name:
-                pk = tb["primary key"]
-                break
+
 
 
         file_extension = '.json' if dbtype == 'nosql' else '.csv'
         for file_name in os.listdir(path):
             file_path = os.path.join(path, file_name)
-            if os.path.isfile(file_path) and file_path.lower().endswith(file_extension):
+            if os.path.isfile(file_path) and file_path.lower().endswith(file_extension) and 'metadata' not in file_path:
                 if dbtype == 'nosql':
                     with open(file_path, 'r+', encoding='utf-8') as file:
                         data = json.load(file)
                         updated_data = []
 
                         for record in data:
-                            if self.condition['variable'] in record:
-                                filter_passes = ops[self.condition['method']](record[self.condition['variable']], self.condition['value'])
+                            if self.condition['variable'] in record and record[self.condition['variable']] != "":
+                                filter_passes = ops[self.condition['method']](int(record[self.condition['variable']].replace('“', '').replace('”', '')), int(self.condition['value'].replace('“', '').replace('“', '')))
 
                                 if filter_passes is True:
                                     record[self.target_condition['target']] = self.target_condition['value']
@@ -390,8 +385,8 @@ class Updater:
                         reader = csv.DictReader(file)
                         for row in reader:
                             # Check if the condition variable is present in the row
-                            if self.condition['variable'] in row:
-                                filter_passes = ops[self.condition['method']](row[self.condition['variable']], self.condition['value'])
+                            if self.condition['variable'] in row and row[self.condition['variable']] != "":
+                                filter_passes = ops[self.condition['method']](int(row[self.condition['variable']].replace('“', '').replace('”', '')), int(self.condition['value'].replace('“', '').replace('“', '')))
                                 # Update the record if the condition is met
                                 if filter_passes:
                                     row[self.target_condition['target']] = self.target_condition['value']
@@ -406,20 +401,7 @@ class Updater:
                     print(f"Records updated in {file_path}.")
 
     def update(self,db_path):
-        '''{
-                "query_type": "updating",
-                "table_name": match.group(1),
-                "condition":{
-                    "variable":condition_match.group(1),
-                    "method": condition_match.group(2),
-                    "value": condition_match.group(3)
-                },
-                "target_condition":{
-                    "target": target_match.group(1),
-                    "value": target_match.group(2),
-                },
-            }
-'''
+
         if self.command_type == "updating":
             # Input: table, condition{variable, method, value}, target_condition{target, value}
             # check table exist
