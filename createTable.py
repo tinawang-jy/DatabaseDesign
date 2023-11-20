@@ -26,7 +26,10 @@ class TableManager:
 
     def new_table_nosql(self,db_path):
         data = {column: None for column in self.columns}
-        os.makedirs(f'{db_path}/{self.table_name}')
+        directory_path = f'{db_path}/{self.table_name}'
+        if not os.path.exists(directory_path):
+        # If it does not exist, create it
+            os.makedirs(directory_path, exist_ok=True)
         # create empty file
         with open(f'{db_path}/{self.table_name}/chunk_1.json', 'w', encoding='utf-8') as f:
             json.dump([data], f, indent=4)
@@ -42,7 +45,10 @@ class TableManager:
         print(f"Table {self.table_name} created in JSON.")
 
     def new_table_relational(self,db_path):
-        os.makedirs(f'{db_path}/{self.table_name}')
+        directory_path = f'{db_path}/{self.table_name}'
+        if not os.path.exists(directory_path):
+        # If it does not exist, create it
+            os.makedirs(directory_path, exist_ok=True)
         # create empty file
         with open(f'{db_path}/{self.table_name}/chunk_1.csv', 'w', newline='', encoding='utf-8') as csvfile:
             writer = csv.DictWriter(csvfile, fieldnames=self.columns)
@@ -104,13 +110,13 @@ class TableManager:
                                         self.new_table_nosql(db_path)
                                     # case when exists foreign key
                                     else:
-                                        for key in self.foreign_key:
+                                        key = self.foreign_key[0]
                                             # foreign key must refer to primary key
-                                            for info in table_info:
-                                                if info['table_name'] == key['ref_table'] and info['primary key'] == key['ref_column']:
-                                                    self.new_table_nosql(db_path)
-                                                else:
-                                                    print("Check your foreign key!")
+                                        for info in table_info:
+                                            if info['table_name'] == key['ref_table'] and info['primary key'] == key['ref_column']:
+                                                self.new_table_nosql(db_path)
+                                            else:
+                                                print("Check your foreign key!")
 
                         elif db_path.endswith('_relational'):
                             # empty db
