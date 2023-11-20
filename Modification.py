@@ -173,7 +173,7 @@ class Updater:
                                 for fk in tb["foreign key"]:
                                     referring_path = f"{db_path}/{fk['ref_table']}"
                                     pair = dict(zip(self.columns,self.values))
-                                    pk_col = tb["primary key"]
+                                    pk_col = tb["foreign key"][0]["self_column"]
                                     fk_col = tb["foreign key"][0]["ref_column"]
                                     fk_validation = self.check_value_exist(value_to_check=pair[pk_col],col_name=fk_col,path=referring_path,dbtype=self.db_type)
                                     # check duplicate pk
