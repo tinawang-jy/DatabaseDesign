@@ -1,20 +1,20 @@
 class Aggregator:
     @staticmethod
-    def count(self, data):
+    def count(data):
         count = 0
         for _ in data:
             count += 1
         return count
     
     @staticmethod
-    def sum(self, data):
+    def sum(data):
         total = 0
         for item in data:
             total += float(item)
         return total
     
     @staticmethod
-    def mean(self, data):
+    def mean(data):
         total = 0
         count = 0
         for item in data:
@@ -23,7 +23,7 @@ class Aggregator:
         return total / count if count else 0
     
     @staticmethod
-    def min(self, data):
+    def min(data):
         if not data:
             return 0
         min_value = float(data[0])
@@ -33,7 +33,7 @@ class Aggregator:
         return min_value
     
     @staticmethod
-    def max(self, data):
+    def max(data):
         if not data:
             return 0
         max_value = float(data[0])
