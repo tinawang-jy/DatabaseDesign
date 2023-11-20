@@ -1,0 +1,501 @@
+,Unnamed: 0,host_id,host_name,host_response_time,host_response_rate,host_acceptance_rate,host_total_listings_count
+0,0,278008181,Shiela,,,,6.0
+1,1,482579539,Yahide,within an hour,96%,98%,28.0
+2,2,495867643,Lin,within an hour,100%,100%,7.0
+3,3,21981097,Paola,within a few hours,100%,75%,2.0
+4,4,232012515,Mojdeh,a few days or more,0%,,1.0
+5,5,327957587,Mark,within an hour,90%,90%,2.0
+6,6,390414536,Paulo,a few days or more,44%,47%,99.0
+7,7,215263603,Luxury Escapes,within a few hours,90%,51%,25.0
+8,8,23778624,Kevin,within an hour,100%,100%,2.0
+9,9,448843163,Beverly,within an hour,100%,100%,3.0
+10,10,61334137,Brett,a few days or more,0%,,1.0
+11,11,84707009,Charlie,,,,2.0
+12,12,7271092,Natasha,,,,2.0
+13,13,295028296,Julia,,,,2.0
+14,14,496178738,Esther,within an hour,100%,97%,3.0
+15,15,39301661,Luna,,,,2.0
+16,16,153020699,Rob,,,,3.0
+17,17,256461417,So,,,,3.0
+18,18,150161677,Sergio,,,,2.0
+19,19,159889373,Yu,,,,2.0
+20,20,281933410,Steven,,,,1.0
+21,21,198300524,Marilyn,,,,3.0
+22,22,81742821,Max,,,,2.0
+23,23,385575830,Onefinestay,,,,16.0
+24,24,188804670,Abi,,,,3.0
+25,25,160012982,John,within an hour,100%,96%,6.0
+26,26,191748895,Al,,,,2.0
+27,27,274611850,Daron,,,,3.0
+28,28,251706106,M,,,,1.0
+29,29,7205712,Luke,,,,1.0
+30,30,35834391,Ismail,,,,1.0
+31,31,456862710,Nicole,within an hour,97%,89%,6.0
+32,32,5992350,Jana,,,,1.0
+33,33,91600765,Lynn,within an hour,100%,99%,14.0
+34,34,3750994,Jr,within a few hours,100%,67%,2.0
+35,35,351845627,Sindy,,,0%,4.0
+36,36,379315717,Sharokh,,,,1.0
+37,37,23458477,Marina,within a day,58%,84%,129.0
+38,38,484477694,Bobby,within an hour,100%,100%,57.0
+39,39,34660629,Kelly,,,,3.0
+40,40,414598665,Wang,,,,3.0
+41,41,265213452,Catalina Glamping,within a few hours,96%,97%,54.0
+42,42,5390998,Stuart,,,,2.0
+43,43,52677363,Marc,within a few hours,100%,,1.0
+44,44,1242157,Catherine,,,,1.0
+45,45,38207395,Marianne,within an hour,100%,83%,1.0
+46,46,832981,Alyson,,,89%,1.0
+47,47,3805065,Erin,,,,5.0
+48,48,61605043,Scott,,,,1.0
+49,49,33249323,Julia & Joe,within a few hours,100%,79%,86.0
+50,50,3953867,Keller,,,100%,3.0
+51,51,481187016,Amir Masoud,within an hour,100%,96%,60.0
+52,52,49299834,Nayrika,,,,2.0
+53,53,13361994,Jack,,,,4.0
+54,54,24598375,Latoya,,,,1.0
+55,55,174792040,RoomPicks By Victoria,within an hour,100%,98%,9168.0
+56,56,52315128,Waq,,,,1.0
+57,57,7380578,Chris & Diana,,,,2.0
+58,58,33888167,Sofia,within an hour,100%,77%,8.0
+59,59,56867523,Randall,,,,1.0
+60,60,504528690,Rahim,within an hour,100%,95%,45.0
+61,61,21458609,At-Homeness Vacation Rentals,within an hour,100%,98%,93.0
+62,62,431185636,Lisa,within an hour,100%,100%,1.0
+63,63,7027528,Angela,,,,2.0
+64,64,1310266,Sarah,,,,2.0
+65,65,209323229,Sousan,,,,1.0
+66,66,44792103,Marc,,,,1.0
+67,67,68437493,Dick,,,,1.0
+68,68,15931063,Waverly,,,,1.0
+69,69,67470756,Guru,,,,1.0
+70,70,169436070,Steven,,,,1.0
+71,71,508776081,Jia,within an hour,100%,97%,9.0
+72,72,31464866,Jared,,,,1.0
+73,73,232927931,Gabriel F C Oliveira,,,,3.0
+74,74,91551592,Ishan,,,,2.0
+75,75,342075388,Le Parc Suite Hotel,,,100%,4.0
+76,76,209743834,Sukho,,,98%,39.0
+77,77,368761445,Priscilla,,,,1.0
+78,78,18357229,Magnolia,,,,2.0
+79,79,29981291,Agatha,,,,3.0
+80,80,20734082,Lukia,,,,1.0
+81,81,194417756,Marina,within an hour,100%,97%,10.0
+82,82,162843315,Rj,,,,1.0
+83,83,24739186,Mustafa,,,,3.0
+84,84,21534653,Zhan,,,,1.0
+85,85,188392455,Laura,,,,1.0
+86,86,4676476,Mariel,,,,1.0
+87,87,182232906,Diana,within an hour,100%,96%,1.0
+88,88,484275960,Fernanda,within an hour,100%,100%,55.0
+89,89,232651,Danielle,,,,3.0
+90,90,94970010,Rena,,,,1.0
+91,91,173872233,Lee,,,,29.0
+92,92,151460628,Stefanie,,,,1.0
+93,93,64310509,Jacquelyn,,,,4.0
+94,94,152383261,Joyce,,,,1.0
+95,95,136486644,Brenda,within an hour,100%,94%,9.0
+96,96,70233166,Matthew,,,,1.0
+97,97,445110612,Caryn,,,85%,12.0
+98,98,18308009,Lauren,,,,1.0
+99,99,44290147,Ben,,,,4.0
+100,100,83436388,David,,,,1.0
+101,101,132130173,Aaron,,,,1.0
+102,102,10849891,Sylvia,within a day,100%,100%,4.0
+103,103,88380923,Kenny & Lorna,within an hour,100%,97%,1.0
+104,104,86413741,Austin,,,,2.0
+105,105,24563544,Tim,,,,1.0
+106,106,184906187,Yulin,,,,2.0
+107,107,35233243,Jessica,within a day,71%,,1.0
+108,108,27343875,Eliezer,,,,4.0
+109,109,43340898,Ivan,,,,3.0
+110,110,11163982,Frank,,,,5.0
+111,111,4835856,Nicholas,,,,2.0
+112,112,57655243,Keilyn,,,,1.0
+113,113,218255111,Ceren,,,,1.0
+114,114,223874236,Gabriel,,,,1.0
+115,115,4418650,Clara,,,,2.0
+116,116,2344764,Kevin,within an hour,100%,100%,24.0
+117,117,230447632,Lindsay,,,,2.0
+118,118,210410099,Helina,,,,2.0
+119,119,511502535,Palmdale,within an hour,100%,100%,2.0
+120,120,490835617,Lee,within an hour,100%,57%,3.0
+121,121,47698426,Allyson,,,,1.0
+122,122,3301832,Michael,,,,1.0
+123,123,9215571,Esther,,,,1.0
+124,124,124323757,Cynthia,,,,3.0
+125,125,17466265,Rita,,,,1.0
+126,126,383281375,Shelly,a few days or more,4%,100%,1763.0
+127,127,24490171,Ed & RJ,,,,1.0
+128,128,423563133,AbundantLiving,within an hour,100%,99%,9.0
+129,129,22013603,Christine,,,,3.0
+130,130,54878477,Mirna,a few days or more,0%,80%,2.0
+131,131,43038816,Alffy,within an hour,100%,84%,2.0
+132,132,58522668,Pamela,,,,8.0
+133,133,286180745,Hunter,,,,1.0
+134,134,13992754,Just Bring Your Toothbrush,within an hour,100%,97%,168.0
+135,135,13107925,Rod,within an hour,100%,,6.0
+136,136,482579539,Yahide,within an hour,96%,98%,28.0
+137,137,40341370,Nick,,,,2.0
+138,138,18369218,Matt,,,,1.0
+139,139,33467826,Mathias,,,,1.0
+140,140,171396048,宝,,,,2.0
+141,141,135578965,Nena,,,,9.0
+142,142,22197219,Jacquelyn,,,,3.0
+143,143,324653379,Dean,,,100%,3.0
+144,144,314925336,茜茜,,,,2.0
+145,145,431574016,Anett,,,,1.0
+146,146,168416,Michelle,,,,1.0
+147,147,88811292,Justin,,,,1.0
+148,148,91718737,Mo,,,,1.0
+149,149,4957288,Kate,,,,1.0
+150,150,466652688,Xuebao,,,,3.0
+151,151,383281375,Shelly,a few days or more,4%,100%,1763.0
+152,152,720038,Marcus,,,,1.0
+153,153,58047129,Peter,within an hour,100%,100%,2.0
+154,154,104847537,Ella,within an hour,100%,100%,5.0
+155,155,390414536,Paulo,a few days or more,44%,47%,99.0
+156,156,8289317,Guadalupe & Angel,within an hour,100%,100%,12.0
+157,157,174285643,Alex,,,,1.0
+158,158,303039123,Maria,,,100%,3.0
+159,159,531912869,Cai,,,,2.0
+160,160,2700630,Lorena,within a day,67%,79%,2.0
+161,161,12568111,Antoinette,within an hour,100%,66%,530.0
+162,162,6325688,Allison,,,,1.0
+163,163,348745371,Zanoza,within an hour,98%,100%,68.0
+164,164,405136884,Lillian,within an hour,100%,91%,21.0
+165,165,188042488,Jay,within an hour,100%,78%,16.0
+166,166,80084882,Allison And Aaron,within an hour,100%,99%,6.0
+167,167,1304699,Jacqueline,within a few hours,100%,95%,3.0
+168,168,130169975,Denny,within an hour,100%,83%,4.0
+169,169,79146654,Ping,within an hour,100%,94%,5.0
+170,170,101642970,Josh,within an hour,100%,62%,54.0
+171,171,105630569,Surf City,within an hour,96%,98%,21.0
+172,172,423744462,Huaqi,within an hour,100%,98%,8.0
+173,173,501817287,Henry,,,100%,2.0
+174,174,56731063,Peter,within an hour,100%,97%,18.0
+175,175,464645725,Kevin,,,,1.0
+176,176,319109908,Viviana,within an hour,100%,100%,2.0
+177,177,496674605,Kim,within a few hours,86%,25%,2.0
+178,178,975343,Marlene,within an hour,100%,100%,1.0
+179,179,20864923,Chantal,within an hour,100%,99%,6.0
+180,180,96220702,Juan,within a few hours,95%,100%,30.0
+181,181,247142928,Karen,within an hour,100%,94%,1.0
+182,182,529355028,Xiao,within an hour,100%,40%,9.0
+183,183,179166975,Anne,within an hour,100%,88%,1.0
+184,184,414967936,Justin,,,,5.0
+185,185,24303784,Stay Awhile,within an hour,100%,93%,128.0
+186,186,143914096,Devin,within a few hours,100%,86%,1.0
+187,187,21303728,Thelma,within an hour,100%,95%,4.0
+188,188,348745371,Zanoza,within an hour,98%,100%,68.0
+189,189,50925157,Traci,within a few hours,100%,50%,1.0
+190,190,132717219,Lisa,within an hour,100%,99%,28.0
+191,191,22172560,Ash,within a day,100%,25%,2.0
+192,192,1381694,Ann,within an hour,100%,100%,8.0
+193,193,182322942,Kelly,within an hour,100%,89%,1.0
+194,194,365502524,Sheila,within an hour,82%,100%,12.0
+195,195,203383220,Melina,,,,1.0
+196,196,487346831,Sandra,within an hour,100%,100%,2.0
+197,197,534598147,Ferdy,,,,1.0
+198,198,322479668,Yan,within an hour,100%,100%,6.0
+199,199,470644787,Andrew,within an hour,100%,100%,1.0
+200,200,9756899,Susan,within an hour,100%,94%,2.0
+201,201,206011749,Julia,within a few hours,100%,83%,5.0
+202,202,149617420,Randy,within an hour,100%,100%,3.0
+203,203,419073286,Sahar,,,80%,1.0
+204,204,16531699,Katherine,within a few hours,100%,100%,1.0
+205,205,230809960,Liang,within an hour,100%,100%,2.0
+206,206,6633997,Michael,within an hour,100%,100%,2.0
+207,207,383281375,Shelly,a few days or more,4%,100%,1763.0
+208,208,9075429,Open Air,within an hour,100%,84%,116.0
+209,209,450057617,Nicole,within an hour,100%,100%,2.0
+210,210,365502524,Sheila,within an hour,82%,100%,12.0
+211,211,460753039,Thi Tam,within an hour,100%,100%,5.0
+212,212,287155677,Exclusivo,within an hour,95%,99%,6.0
+213,213,396163985,Doris,within an hour,90%,100%,41.0
+214,214,14898804,Jaime,,,88%,1.0
+215,215,376068249,Alison,within a day,100%,67%,3.0
+216,216,265815679,Caroline,within an hour,100%,92%,1.0
+217,217,30444275,Sarah,within an hour,100%,95%,13.0
+218,218,383281375,Shelly,a few days or more,4%,100%,1763.0
+219,219,506442071,Patrick,,,,1.0
+220,220,101732029,Ben,within an hour,100%,100%,6.0
+221,221,104721202,Brian,within an hour,100%,89%,1.0
+222,222,126824075,Month2month,within an hour,100%,79%,233.0
+223,223,23722312,Nick,within an hour,100%,98%,97.0
+224,224,242956513,Jessica,within an hour,100%,100%,5.0
+225,225,191464,Mike,within an hour,98%,98%,18.0
+226,226,183017262,Saranya,within an hour,67%,40%,3.0
+227,227,8595758,Gerardo,within an hour,100%,100%,84.0
+228,228,450467456,Rosa,within an hour,100%,100%,3.0
+229,229,426946658,Lily,within an hour,100%,95%,27.0
+230,230,8595758,Gerardo,within an hour,100%,100%,84.0
+231,231,463474861,Lillian,within an hour,100%,98%,6.0
+232,232,390414536,Paulo,a few days or more,44%,47%,99.0
+233,233,32794637,Nada,within an hour,100%,79%,4.0
+234,234,43052234,Desiree,within a few hours,100%,56%,5.0
+235,235,502706350,Maggie,within a few hours,80%,0%,1.0
+236,236,91479289,Mantra,within an hour,100%,100%,2.0
+237,237,110393389,Kiarash,within an hour,100%,100%,10.0
+238,238,432956623,Dan,a few days or more,42%,78%,26.0
+239,239,11494901,Maureen,,,,1.0
+240,240,367239952,German,within an hour,100%,100%,2.0
+241,241,66458695,Paul,within a few hours,100%,20%,2.0
+242,242,163463758,Kenter Twenty Six,within an hour,100%,29%,4.0
+243,243,390414536,Paulo,a few days or more,44%,47%,99.0
+244,244,16503189,Dale,within a few hours,100%,100%,1.0
+245,245,106421421,Bee My Guest Homestays,within an hour,100%,100%,9.0
+246,246,456018609,Vacasa California,within an hour,90%,99%,799.0
+247,247,30480376,K T S Property Management,within an hour,100%,96%,7.0
+248,248,196650158,Flora,within an hour,100%,100%,7.0
+249,249,383281375,Shelly,a few days or more,4%,100%,1763.0
+250,250,154855781,Emeka,a few days or more,11%,0%,3.0
+251,251,436317831,Nate,within an hour,100%,99%,1.0
+252,252,12102385,Eliza And Justin,within an hour,100%,100%,107.0
+253,253,88999697,Yossi,within a few hours,100%,100%,2.0
+254,254,57884339,Sharon,within an hour,100%,98%,4.0
+255,255,154766860,Feven,within an hour,100%,95%,9.0
+256,256,383281375,Shelly,a few days or more,4%,100%,1763.0
+257,257,214551398,Ashley,within an hour,100%,99%,19.0
+258,258,428553380,Bryan,a few days or more,0%,0%,6.0
+259,259,423956351,Arya,within a few hours,84%,33%,62.0
+260,260,304404827,Khaleel,within an hour,100%,100%,4.0
+261,261,501999514,RoomPicks,within an hour,100%,99%,3782.0
+262,262,463351441,Luca,within an hour,100%,98%,2.0
+263,263,46988513,Cevher,within a day,87%,95%,19.0
+264,264,40163894,Zora,within an hour,96%,65%,38.0
+265,265,383281375,Shelly,a few days or more,4%,100%,1763.0
+266,266,23458477,Marina,within a day,58%,84%,129.0
+267,267,445693122,Marina,within an hour,100%,83%,22.0
+268,268,484830479,Christian,,,,1.0
+269,269,76201653,Antonia,within an hour,100%,90%,3.0
+270,270,49957375,Serge,within an hour,99%,75%,50.0
+271,271,107434423,Blueground,within an hour,100%,97%,5803.0
+272,272,2503251,Laura,within an hour,100%,97%,33.0
+273,273,107434423,Blueground,within an hour,100%,97%,5803.0
+274,274,383281375,Shelly,a few days or more,4%,100%,1763.0
+275,275,469244855,Schea,a few days or more,0%,33%,1.0
+276,276,190044727,Adam,within an hour,90%,94%,1.0
+277,277,6378114,Tony/Eve,within a few hours,100%,71%,2.0
+278,278,145255025,Andy,within an hour,100%,100%,6.0
+279,279,265509122,Nikki,a few days or more,0%,,4.0
+280,280,44310210,Tamara,within an hour,100%,99%,16.0
+281,281,64165193,David Wai,within an hour,99%,100%,120.0
+282,282,107434423,Blueground,within an hour,100%,97%,5803.0
+283,283,479654437,Jeremy,within an hour,83%,95%,19.0
+284,284,23524402,Henry,within an hour,100%,100%,17.0
+285,285,475060587,Singer,within an hour,100%,100%,13.0
+286,286,52901870,Leslie,within an hour,91%,95%,1.0
+287,287,49270200,Candis,within an hour,100%,98%,7.0
+288,288,16572765,Sabrina,a few days or more,40%,14%,8.0
+289,289,34556090,Brooke,within an hour,100%,100%,3.0
+290,290,97496339,Sissi,within an hour,99%,99%,120.0
+291,291,463474861,Lillian,within an hour,100%,98%,6.0
+292,292,383281375,Shelly,a few days or more,4%,100%,1763.0
+293,293,10161596,Patricia,within an hour,100%,95%,5.0
+294,294,230046119,Adam,within a day,100%,,4.0
+295,295,434029494,Neuman,within an hour,100%,100%,1.0
+296,296,61679385,Gabrielle,within an hour,100%,100%,1.0
+297,297,259441045,Leon,,,,64.0
+298,298,17301719,Linda,within an hour,100%,97%,6.0
+299,299,107434423,Blueground,within an hour,100%,97%,5803.0
+300,300,107434423,Blueground,within an hour,100%,97%,5803.0
+301,301,7574629,Sabine,within an hour,98%,96%,9.0
+302,302,444510936,Rob,within an hour,100%,100%,5.0
+303,303,480053,Shirley,within an hour,100%,59%,11.0
+304,304,156855290,Steve,,,,11.0
+305,305,7044596,Nabil,within an hour,100%,86%,5.0
+306,306,298417951,Viceroy Santa Monica,within an hour,100%,96%,16.0
+307,307,63797228,Alan,,,,1.0
+308,308,90563632,Robert,,,,3.0
+309,309,422914353,Deep Blue,within an hour,97%,99%,18.0
+310,310,11581913,Intrepid,within an hour,100%,98%,1.0
+311,311,23722312,Nick,within an hour,100%,98%,97.0
+312,312,4592478,Yoko,within a few hours,100%,94%,1.0
+313,313,100799215,Delores,within a few hours,100%,83%,1.0
+314,314,107434423,Blueground,within an hour,100%,97%,5803.0
+315,315,183748799,Amy,within an hour,100%,99%,138.0
+316,316,14649261,Judy,within a few hours,100%,0%,5.0
+317,317,72933825,The Maimon Group,within an hour,100%,96%,103.0
+318,318,277669,Alexis,within an hour,100%,50%,3.0
+319,319,98574255,W,within an hour,98%,85%,16.0
+320,320,511815270,Js,within an hour,88%,89%,3.0
+321,321,9668663,Tiffany,within an hour,98%,100%,11.0
+322,322,23458477,Marina,within a day,58%,84%,129.0
+323,323,29990558,Paul,within an hour,100%,80%,1.0
+324,324,98647265,Rebecca,within an hour,100%,93%,44.0
+325,325,85765495,Ahmet Burak,,,,4.0
+326,326,58502661,Stefanie,within a few hours,100%,100%,5.0
+327,327,435012452,Millennial,within an hour,100%,99%,9.0
+328,328,24913108,Joanne,within a few hours,100%,17%,3.0
+329,329,13712362,John,within an hour,100%,98%,5.0
+330,330,3966833,Jose,within an hour,100%,100%,3.0
+331,331,159628778,Cody,within a day,80%,71%,4.0
+332,332,29294575,Catherine,within an hour,100%,100%,11.0
+333,333,94618664,Lily,within an hour,93%,100%,1.0
+334,334,320294894,Erwin,within an hour,100%,96%,6.0
+335,335,3298804,Ita,a few days or more,0%,0%,5.0
+336,336,8595758,Gerardo,within an hour,100%,100%,84.0
+337,337,10165009,Rock,within an hour,100%,100%,16.0
+338,338,7512943,Ike,within a few hours,100%,100%,5.0
+339,339,5437602,Courtney,within an hour,100%,86%,2.0
+340,340,72933825,The Maimon Group,within an hour,100%,96%,103.0
+341,341,426946658,Lily,within an hour,100%,95%,27.0
+342,342,74386873,Donald,within an hour,100%,98%,1.0
+343,343,1550927,Mary,within a few hours,100%,0%,4.0
+344,344,55859471,Owais,within an hour,100%,100%,3.0
+345,345,76815245,Priscilla,within an hour,100%,100%,2.0
+346,346,533136918,Jino,within an hour,100%,100%,27.0
+347,347,440237253,Xiaojin,within an hour,100%,98%,8.0
+348,348,479235306,Joelle,within a day,80%,50%,3.0
+349,349,1821789,Maria,within a day,100%,93%,4.0
+350,350,383281375,Shelly,a few days or more,4%,100%,1763.0
+351,351,423956351,Arya,within a few hours,84%,33%,62.0
+352,352,15811249,Udi,within a day,63%,80%,11.0
+353,353,14488107,Vicky,within an hour,90%,70%,13.0
+354,354,24303784,Stay Awhile,within an hour,100%,93%,128.0
+355,355,171180364,Roni,within an hour,99%,93%,131.0
+356,356,62352226,Tatianna,,,100%,3.0
+357,357,66955122,Mike,a few days or more,0%,0%,1.0
+358,358,32170653,Maria,within an hour,100%,100%,3.0
+359,359,55656242,Owen,within an hour,100%,97%,4.0
+360,360,298013329,Asap,within a day,82%,61%,13.0
+361,361,2315535,Shana,within a day,50%,29%,1.0
+362,362,38189462,Francesco,within a few hours,70%,86%,8.0
+363,363,25923001,Vicky,within an hour,100%,92%,15.0
+364,364,350851315,Jeffrey,within an hour,100%,81%,8.0
+365,365,4817301,Chris,within a few hours,100%,100%,1.0
+366,366,12761355,Kelley,within a few hours,100%,79%,4.0
+367,367,298417951,Viceroy Santa Monica,within an hour,100%,96%,16.0
+368,368,491440032,Hope,within a day,100%,100%,1.0
+369,369,84182835,Anastasiia,within an hour,100%,99%,8.0
+370,370,25203459,Jen,,,,1.0
+371,371,27817104,Beverly,within an hour,100%,100%,5.0
+372,372,675083,Alejandra,within an hour,100%,55%,6.0
+373,373,450309096,Yvette,within an hour,100%,100%,1.0
+374,374,483332760,Tami,within an hour,100%,96%,1.0
+375,375,444510936,Rob,within an hour,100%,100%,5.0
+376,376,54728323,Sam,,,0%,1.0
+377,377,410194448,Andrik,within an hour,100%,100%,53.0
+378,378,185224377,Natalia,within an hour,80%,94%,44.0
+379,379,29888327,Eric,,,,1.0
+380,380,131402171,Christopher,within an hour,100%,100%,1.0
+381,381,50415409,Ariel,within a few hours,100%,100%,7.0
+382,382,6641790,Kayren,,,,3.0
+383,383,523515366,Zack,within an hour,100%,100%,1.0
+384,384,152416865,Loren,,,,4.0
+385,385,429011,Gregory,,,,2.0
+386,386,507181362,Bruce,within an hour,100%,100%,1.0
+387,387,6258733,Ray,,,,1.0
+388,388,94688631,Daniel,within an hour,96%,99%,13.0
+389,389,326084746,Suiteness,within an hour,100%,90%,1231.0
+390,390,92251416,Jason,within an hour,100%,100%,6.0
+391,391,488263279,Mara And Emilio,within an hour,100%,96%,1.0
+392,392,254573871,Kelly,within an hour,100%,100%,4.0
+393,393,229612969,Zedrie,within an hour,100%,0%,13.0
+394,394,23458477,Marina,within a day,58%,84%,129.0
+395,395,171180364,Roni,within an hour,99%,93%,131.0
+396,396,173554583,Annie,,,100%,6.0
+397,397,470986265,Ethan,within a few hours,94%,83%,21.0
+398,398,3116353,Sara And Sam,,,,4.0
+399,399,16208978,Steve,within a day,100%,50%,4.0
+400,400,76404121,George,within an hour,100%,100%,3.0
+401,401,33249323,Julia & Joe,within a few hours,100%,79%,86.0
+402,402,24709144,Monique,within an hour,95%,74%,9.0
+403,403,43226028,Patrick,within an hour,100%,8%,4.0
+404,404,171180364,Roni,within an hour,99%,93%,131.0
+405,405,118616245,Valeriya,within an hour,100%,99%,4.0
+406,406,6246526,Alie,within an hour,100%,50%,8.0
+407,407,4080905,David,,,,1.0
+408,408,464627593,Jessica,within an hour,100%,98%,1.0
+409,409,11351063,Aaron,within a few hours,100%,69%,54.0
+410,410,11351063,Aaron,within a few hours,100%,69%,54.0
+411,411,70837270,Marx,,,99%,4.0
+412,412,101537031,The Line Collection,within an hour,97%,85%,260.0
+413,413,101537031,The Line Collection,within an hour,97%,85%,260.0
+414,414,79090892,Nofar,within an hour,100%,81%,3.0
+415,415,35911725,LaDan,,,,3.0
+416,416,137783803,Debra,,,,1.0
+417,417,5927634,Rami,within an hour,100%,97%,4.0
+418,418,129452864,Sam,within an hour,100%,100%,3.0
+419,419,70084969,Soli,within a few hours,100%,100%,1.0
+420,420,533857274,Andrew,a few days or more,0%,,1.0
+421,421,101537031,The Line Collection,within an hour,97%,85%,260.0
+422,422,329194698,Anthony,,,,3.0
+423,423,139761327,Aliza & James,within a few hours,100%,100%,1.0
+424,424,5993110,Talia,within a few hours,100%,50%,1.0
+425,425,225172481,Michael,,,,2.0
+426,426,338909799,Alec,within an hour,100%,88%,75.0
+427,427,60403698,Tim,within an hour,100%,100%,2.0
+428,428,113155277,Ak,,,,2.0
+429,429,107434423,Blueground,within an hour,100%,97%,5803.0
+430,430,5886918,Garybozick,,,100%,2.0
+431,431,43831951,Mo,,,,1.0
+432,432,126644161,Evolve,within an hour,99%,99%,1736.0
+433,433,1647617,Cristhiam,within an hour,100%,100%,2.0
+434,434,891818,Nicole,within an hour,100%,99%,200.0
+435,435,405121639,Zou,within a few hours,78%,92%,7.0
+436,436,263524662,Lance,within an hour,100%,78%,201.0
+437,437,24768974,Jerry,,,,11.0
+438,438,441153092,Tetiana,within an hour,97%,100%,62.0
+439,439,71030757,Yoni,within an hour,97%,98%,114.0
+440,440,232930661,Mike And Vee,within an hour,100%,100%,3.0
+441,441,12568111,Antoinette,within an hour,100%,66%,530.0
+442,442,473182787,Jared,within a few hours,100%,100%,3.0
+443,443,231980577,Marc,,,,1.0
+444,444,25527555,Nasime,within an hour,100%,92%,5.0
+445,445,259252155,Tony,within a day,90%,53%,12.0
+446,446,20913059,Daniel &Quot;Taylor&Quot;,,,,1.0
+447,447,347271195,Cali,within an hour,100%,99%,17.0
+448,448,531184870,ZenStay,within an hour,100%,100%,3.0
+449,449,86340687,Danielle,,,,1.0
+450,450,100428075,Sam,within an hour,100%,92%,105.0
+451,451,504528690,Rahim,within an hour,100%,95%,45.0
+452,452,1150286,Charlene,,,,2.0
+453,453,435079990,Eliezer,within an hour,100%,100%,10.0
+454,454,3611212,Steve,,,,2.0
+455,455,210321294,Natalie And Josh,within an hour,98%,97%,58.0
+456,456,5349150,Sydney,,,,1.0
+457,457,264159955,LuxStays,within an hour,60%,94%,26.0
+458,458,60414489,Alexa,within an hour,100%,78%,9.0
+459,459,471170732,Rachel,within an hour,100%,99%,2.0
+460,460,22341861,Leslie,within an hour,100%,63%,4.0
+461,461,478278374,Joe,,,100%,1.0
+462,462,75413038,Eunhee,,,,1.0
+463,463,205783882,Clark,,,,3.0
+464,464,50346377,Nate,,,,1.0
+465,465,165639248,Joe,,,,1.0
+466,466,55733059,Carmen,,,,1.0
+467,467,67235996,Kee,,,,1.0
+468,468,49758708,Mark,,,,1.0
+469,469,213003764,Alex,,,,1.0
+470,470,173872233,Lee,,,,29.0
+471,471,16426450,B | Panache,,,,9.0
+472,472,55177453,Pamela,,,67%,1.0
+473,473,278008181,Shiela,,,,6.0
+474,474,231885068,Ksenia,,,,2.0
+475,475,345121555,SIXTY Beverly Hills,,,100%,6.0
+476,476,276401052,Shun,,,,1.0
+477,477,232523429,John,within an hour,100%,100%,3.0
+478,478,466652688,Xuebao,,,,3.0
+479,479,350228821,Jefferey,,,,2.0
+480,480,1119529,Anna,within an hour,100%,100%,3.0
+481,481,383281375,Shelly,a few days or more,4%,100%,1763.0
+482,482,107434423,Blueground,within an hour,100%,97%,5803.0
+483,483,383281375,Shelly,a few days or more,4%,100%,1763.0
+484,484,425250052,Erick,within an hour,100%,100%,1.0
+485,485,186951642,Rose,within an hour,100%,83%,4.0
+486,486,390414536,Paulo,a few days or more,44%,47%,99.0
+487,487,278359088,Prissilla,,,,1.0
+488,488,105630569,Surf City,within an hour,96%,98%,21.0
+489,489,132706771,Philip,within an hour,100%,100%,3.0
+490,490,4235108,Ofir,within an hour,100%,99%,56.0
+491,491,221242859,Daniels,within a day,80%,96%,13.0
+492,492,48005494,Zeus,within a few hours,100%,97%,2005.0
+493,493,298013329,Asap,within a day,82%,61%,13.0
+494,494,231475130,Golden,within a few hours,100%,,7.0
+495,495,441255156,Felicia,within an hour,97%,75%,42.0
+496,496,54682809,Vincent,,,,3.0
+497,497,23524402,Henry,within an hour,100%,100%,17.0
+498,498,35259467,Janice,within a day,100%,100%,2.0
+499,499,205034974,Jean-Yves,,,,2.0
