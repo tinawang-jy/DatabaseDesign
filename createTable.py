@@ -25,7 +25,7 @@ class TableManager:
                     print(db['tables'])
 
     def new_table_nosql(self,db_path):
-        data = {column: None for column in self.columns}
+        data = {column: "" for column in self.columns}
         directory_path = f'{db_path}/{self.table_name}'
         if not os.path.exists(directory_path):
         # If it does not exist, create it

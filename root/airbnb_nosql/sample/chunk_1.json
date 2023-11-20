@@ -1,0 +1,26 @@
+[
+    {
+        "ID": "",
+        "name": "",
+        "host_id": "",
+        "price": ""
+    },
+    {
+        "ID": "\u201c001\u201d",
+        "name": "\u201cLovely Home\u201d",
+        "host_id": "278008181",
+        "price": "over 1000"
+    },
+    {
+        "ID": "\u201c002\u201d",
+        "name": "\u201cCool Home\u201d",
+        "host_id": "278008181",
+        "price": "over 1000"
+    },
+    {
+        "ID": "\u201c003\u201d",
+        "name": "\u201cCoast Home\u201d",
+        "host_id": "278008181",
+        "price": "over 1000"
+    }
+]

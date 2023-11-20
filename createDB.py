@@ -59,8 +59,9 @@ class DatabaseManager:
                                     try:
                                         data = json.load(file)
                                         if isinstance(data, list) and data:
-                                            attributes = set(data[0].keys())
-                                            table_info['attributes'] = table_info['attributes'] | attributes
+                                            if type(data[0]) != str or None:
+                                                attributes = set(data[0].keys())
+                                                table_info['attributes'] = table_info['attributes'] | attributes
                                     except json.JSONDecodeError as e:
                                         print(f"An error occurred while decoding JSON from file {file_name}: {e}")
                             elif file_path.lower().endswith('.csv'):

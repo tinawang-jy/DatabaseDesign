@@ -1,0 +1,501 @@
+tconst,primaryTitle,titleType,startYear,runtimeMinutes,genres
+tt0000009,Miss Jerry,movie,1894,45,Romance
+tt0000147,The Corbett-Fitzsimmons Fight,movie,1897,100,"Documentary,News,Sport"
+tt0000502,Bohemios,movie,1905,100,\N
+tt0000574,The Story of the Kelly Gang,movie,1906,70,"Action,Adventure,Biography"
+tt0000591,The Prodigal Son,movie,1907,90,Drama
+tt0000615,Robbery Under Arms,movie,1907,\N,Drama
+tt0000630,Hamlet,movie,1908,\N,Drama
+tt0000675,Don Quijote,movie,1908,\N,Drama
+tt0000679,The Fairylogue and Radio-Plays,movie,1908,120,"Adventure,Fantasy"
+tt0000838,A Cultura do Cacau,movie,1909,\N,\N
+tt0000842,De Garraf a Barcelona,movie,1909,\N,\N
+tt0000846,Un día en Xochimilco,movie,1909,\N,\N
+tt0000850,Los dos hermanos,movie,1909,\N,\N
+tt0000859,Fabricación del corcho en Sant Feliu de Guixols,movie,1909,\N,\N
+tt0000862,Faldgruben,movie,1909,\N,\N
+tt0000867,Fiesta de toros,movie,1909,\N,\N
+tt0000868,Fiestas de Santa Lucía - Belenes,movie,1909,\N,\N
+tt0000869,Fiestas en La Garriga,movie,1909,\N,\N
+tt0000879,Gira política de Madero y Pino Suárez,movie,1909,\N,\N
+tt0000886,"Hamlet, Prince of Denmark",movie,1910,\N,Drama
+tt0000941,Locura de amor,movie,1909,45,Drama
+tt0000947,Lægens offer,movie,1909,\N,\N
+tt0000959,Melilla y el Gurugu,movie,1909,\N,\N
+tt0000984,Niños en la alameda,movie,1909,\N,\N
+tt0001007,La primera y segunda casetas,movie,1909,\N,\N
+tt0001010,Protección de un convoy de víveres en el puente de camellos,movie,1909,\N,\N
+tt0001028,Salome Mad,movie,1909,\N,Comedy
+tt0001038,Sherlock Holmes VI,movie,1910,\N,\N
+tt0001043,Smith's Knockabout Theatre,movie,1909,\N,\N
+tt0001049,Gøngehøvdingen,movie,1909,\N,"Drama,War"
+tt0001051,El sueño milagroso,movie,1909,\N,\N
+tt0001059,O Terremoto de Benavente,movie,1909,\N,Documentary
+tt0001069,Toma del Gurugu,movie,1909,\N,\N
+tt0001080,Two of the Boys,movie,1909,\N,\N
+tt0001081,La vida en el campamento,movie,1909,\N,\N
+tt0001082,Viernes de dolores,movie,1909,\N,\N
+tt0001101,Abraham Lincoln's Clemency,movie,1910,\N,\N
+tt0001109,L'aluminite,movie,1910,\N,\N
+tt0001112,Amleto,movie,1910,\N,Drama
+tt0001113,Amor gitano,movie,1910,\N,\N
+tt0001115,Ansigttyven I,movie,1910,\N,Crime
+tt0001116,Ansigttyven II,movie,1910,\N,\N
+tt0001122,The Red Inn,movie,1910,\N,\N
+tt0001141,The Butterfly,movie,1910,\N,\N
+tt0001142,By Order of Napoleon,movie,1910,\N,\N
+tt0001147,O Centenário da Guerra Peninsular,movie,1910,\N,Documentary
+tt0001159,The Connecticut Yankee,movie,1910,\N,\N
+tt0001163,Corrida da Rampa,movie,1910,\N,Documentary
+tt0001175,Camille,movie,1912,\N,"Drama,Romance"
+tt0001179,Desfile histórico del centenario,movie,1910,\N,\N
+tt0001184,Don Juan de Serrallonga,movie,1910,58,"Adventure,Drama"
+tt0001203,Excursión al Gombreny,movie,1910,\N,\N
+tt0001230,Gentleman Joe,movie,1910,\N,\N
+tt0001240,Hamlet,movie,1911,\N,Drama
+tt0001247,His Brother's Wife,movie,1910,\N,\N
+tt0001277,Kapergasten,movie,1910,\N,Drama
+tt0001285,The Life of Moses,movie,1909,50,"Biography,Drama,Family"
+tt0001338,A Night in May,movie,1910,\N,Drama
+tt0001341,Jarní sen starého mládence,movie,1913,\N,Comedy
+tt0001348,Orientalsk dans,movie,1910,\N,\N
+tt0001353,Paganini,movie,1911,\N,\N
+tt0001359,A Pesca do Bacalhau,movie,1910,\N,Documentary
+tt0001364,El pobre Valbuena,movie,1910,\N,\N
+tt0001366,Un portero modelo,movie,1910,\N,\N
+tt0001370,Rainha Depois de Morta Inês de Castro,movie,1910,\N,"Drama,History"
+tt0001379,A Record Hustle Through Foggy London,movie,1910,\N,\N
+tt0001382,Revolução de 5 de Outubro,movie,1910,\N,Documentary
+tt0001386,Le roi des parfums,movie,1910,\N,\N
+tt0001422,Trail to the West,movie,1910,\N,\N
+tt0001440,Valdemar Sejr,movie,1910,\N,"Drama,History"
+tt0001465,As Últimas Inundações do Tejo em Santarém,movie,1910,\N,\N
+tt0001475,Amor fatal,movie,1911,\N,"Drama,Romance"
+tt0001495,A Balkan Episode,movie,1911,\N,\N
+tt0001498,The Battle of Trafalgar,movie,1911,51,War
+tt0001515,The Brand,movie,1911,\N,\N
+tt0001521,En bryllupsaften,movie,1911,\N,\N
+tt0001530,The Bushranger's Bride,movie,1911,\N,Drama
+tt0001531,"Captain Starlight, or Gentleman of the Road",movie,1911,\N,\N
+tt0001555,Cortejo Cívico,movie,1911,\N,\N
+tt0001586,A Dog's Tale,movie,1911,\N,\N
+tt0001592,In the Prime of Life,movie,1911,52,Drama
+tt0001602,El fantasma del castillo,movie,1911,\N,\N
+tt0001603,Den farlige leg,movie,1911,\N,Drama
+tt0001604,The Fatal Wedding,movie,1911,\N,Drama
+tt0001614,The Four Devils,movie,1911,60,Drama
+tt0001628,The Four Poster Pest,movie,1911,\N,\N
+tt0001630,Der fremde Vogel,movie,1911,45,\N
+tt0001648,The Golden West,movie,1911,\N,\N
+tt0001706,The Infant at Snakeville,movie,1911,\N,\N
+tt0001711,Jahreszeiten des Lebens,movie,1915,\N,\N
+tt0001712,Jane Shore,movie,1911,\N,\N
+tt0001716,Julius Caesar's Sandals,movie,1911,\N,\N
+tt0001731,The Convict Hero,movie,1911,\N,Drama
+tt0001756,Lucha por la herencia,movie,1911,92,\N
+tt0001764,Madero al sur del país,movie,1911,\N,\N
+tt0001778,Menneskedyret,movie,1911,\N,\N
+tt0001785,The Miner's Curse,movie,1911,\N,Drama
+tt0001790,"Les Misérables, Part 1: Jean Valjean",movie,1913,60,Drama
+tt0001803,The Mystery of a Hansom Cab,movie,1911,\N,\N
+tt0001812,Oedipus Rex,movie,1911,56,Drama
+tt0001826,Par habitude,movie,1911,\N,Comedy
+tt0001889,Skæbnebæltet,movie,1911,\N,\N
+tt0001892,Den sorte drøm,movie,1911,53,Drama
+tt0001895,Sport Hípico,movie,1911,\N,Documentary
+tt0001911,Nell Gwynne,movie,1911,50,"Biography,Drama,History"
+tt0001914,The Devil's Assistant,movie,1913,\N,Drama
+tt0001920,Temblor de 1911 en México,movie,1911,\N,\N
+tt0001964,The Traitress,movie,1911,48,Drama
+tt0001965,Vicio y virtud,movie,1911,\N,\N
+tt0001992,Zwei Frauen,movie,1911,\N,\N
+tt0001993,L'électrocuté,movie,1911,\N,Sci-Fi
+tt0001998,The Adventures of Lieutenant Petrosino,movie,1912,47,Drama
+tt0002001,The Alaska-Siberian Expedition,movie,1912,\N,Documentary
+tt0002019,Amor de bestia,movie,1912,\N,\N
+tt0002022,Anfisa,movie,1912,45,Drama
+tt0002026,Anny - Story of a Prostitute,movie,1912,68,"Drama,Romance"
+tt0002031,As You Like It,movie,1912,\N,\N
+tt0002039,Atop of the World in Motion,movie,1912,\N,Documentary
+tt0002044,Le bagnard,movie,1912,\N,\N
+tt0002046,La Barrera número 13,movie,1913,\N,\N
+tt0002047,A Batalha,movie,1912,\N,Documentary
+tt0002060,Bernáték kikocsiznak,movie,1912,\N,\N
+tt0002088,Carlota Angela,movie,1912,\N,\N
+tt0002089,Carmen,movie,1912,\N,\N
+tt0002094,Charles IV,movie,1912,50,\N
+tt0002101,Cleopatra,movie,1912,100,"Drama,History"
+tt0002102,The Clod,movie,1912,\N,\N
+tt0002109,The Colonel's Son,movie,1912,\N,\N
+tt0002112,Concurso Hípico no Porto,movie,1912,\N,Documentary
+tt0002115,La conspiration des drapeaux,movie,1912,\N,\N
+tt0002119,The Crime and the Criminal,movie,1912,\N,\N
+tt0002130,Dante's Inferno,movie,1911,71,"Adventure,Drama,Fantasy"
+tt0002131,A Dança dos Apaches,movie,1912,\N,\N
+tt0002140,Do Men Love Women?,movie,1912,\N,\N
+tt0002152,Dødskysset,movie,1915,\N,Drama
+tt0002153,The Great Circus Catastrophe,movie,1912,45,Drama
+tt0002156,Eclipse de sol,movie,1912,\N,\N
+tt0002157,Der Eid des Stephan Huller,movie,1912,\N,\N
+tt0002161,Episódios da Terrível Explosão de Bombas no Porto,movie,1912,\N,Documentary
+tt0002163,Eva,movie,1913,\N,Drama
+tt0002165,Excursión a San Lorenzo de Munt,movie,1912,\N,\N
+tt0002186,The Flying Circus,movie,1912,46,Drama
+tt0002188,For Freedom of Cuba,movie,1912,\N,\N
+tt0002199,From the Manger to the Cross,movie,1912,60,"Biography,Drama"
+tt0002211,Den glade løjtnant,movie,1912,\N,Romance
+tt0002220,Grannie,movie,1912,\N,\N
+tt0002239,Her Own Money,movie,1914,\N,\N
+tt0002242,Herod,movie,1912,\N,\N
+tt0002262,Il y a des pieds au plafond,movie,1912,\N,\N
+tt0002276,De industrieel van Pont Avesnes,movie,1912,\N,\N
+tt0002286,Judith,movie,1912,\N,\N
+tt0002301,Leiria,movie,1912,\N,Documentary
+tt0002305,Life of Villa,movie,1912,\N,"Documentary,War"
+tt0002315,El lobo de la sierra,movie,1912,76,\N
+tt0002328,The Lust for Gold,movie,1912,\N,\N
+tt0002333,The Might of Gold,movie,1912,\N,\N
+tt0002335,Magda,movie,1912,\N,\N
+tt0002337,The Mail Order Wife,movie,1912,\N,\N
+tt0002345,Marocco en het Vreemdelingenlegioen,movie,1912,\N,\N
+tt0002348,Maskierte Liebe,movie,1912,\N,\N
+tt0002361,The Midnight Wedding,movie,1912,\N,Drama
+tt0002362,The Mighty Dollar,movie,1912,\N,\N
+tt0002375,La mort du duc d'Enghien,movie,1912,\N,\N
+tt0002395,Le nègre blanc,movie,1912,\N,\N
+tt0002405,Oliver Twist,movie,1912,\N,Drama
+tt0002406,Oliver Twist,movie,1912,\N,Drama
+tt0002410,Only a Woman,movie,1912,\N,\N
+tt0002423,Passion,movie,1919,85,"Biography,Drama,Romance"
+tt0002425,Paul J. Rainey's African Hunt,movie,1912,60,Documentary
+tt0002431,La pierre philosophe,movie,1912,\N,\N
+tt0002432,Los Pirineos de Port-Bou a Andorra,movie,1912,58,\N
+tt0002438,The Prodigal Daughter,movie,1912,\N,\N
+tt0002439,The Prodigal Son,movie,1913,\N,\N
+tt0002444,Quincy Adams Sawyer,movie,1912,40,Comedy
+tt0002445,Quo Vadis?,movie,1913,120,"Drama,History"
+tt0002446,Race for a Life,movie,1912,\N,\N
+tt0002452,The Independence of Romania,movie,1912,120,"History,War"
+tt0002458,Orozquista Revolution,movie,1912,\N,\N
+tt0002461,The Life and Death of King Richard III,movie,1912,55,Drama
+tt0002467,"Romani, the Brigand",movie,1912,\N,\N
+tt0002474,Saty delaji cloveka,movie,1913,\N,Comedy
+tt0002479,Seal Hunting in Newfoundland,movie,1912,\N,Documentary
+tt0002491,The Sin of a Woman,movie,1912,\N,\N
+tt0002500,The Black Chancellor,movie,1912,48,Drama
+tt0002514,Saved in Mid-Air,movie,1912,60,Drama
+tt0002517,Talma,movie,1912,\N,\N
+tt0002525,The Tide of Death,movie,1912,\N,\N
+tt0002555,The Last Bohemian,movie,1913,\N,"Drama,Romance"
+tt0002556,Vampyrdanserinden,movie,1912,\N,\N
+tt0002559,Verkannt,movie,1912,\N,\N
+tt0002572,Wenn die Maske fällt,movie,1912,\N,\N
+tt0002574,What Happened to Mary,movie,1912,150,"Action,Drama,Thriller"
+tt0002588,Zigomar contre Nick Carter,movie,1912,48,"Crime,Thriller"
+tt0002589,Zona de Incursões em Chaves,movie,1912,\N,\N
+tt0002590,Zu Tode gehetzt,movie,1912,\N,\N
+tt0002591,Zu spät,movie,1913,\N,\N
+tt0002594,'Neath Austral Skies,movie,1913,\N,\N
+tt0002595,...denn alle Schuld rächt sich auf Erden,movie,1913,\N,\N
+tt0002605,The Adventures of Kathlyn,movie,1913,300,Adventure
+tt0002624,El amigo del alma,movie,1913,\N,\N
+tt0002625,Ana Kadova,movie,1913,92,\N
+tt0002628,Der Andere,movie,1913,48,"Drama,Thriller"
+tt0002637,Arizona,movie,1913,45,Western
+tt0002642,The Heir to Skjoldborg,movie,1914,50,Drama
+tt0002646,Atlantis,movie,1913,121,Drama
+tt0002648,Old Brandis' Eyes,movie,1913,\N,"Drama,Fantasy"
+tt0002649,Australia Calls,movie,1913,\N,\N
+tt0002660,Barbarous Mexico,movie,1913,\N,Documentary
+tt0002661,Barcelona bajo la nieve,movie,1913,\N,\N
+tt0002665,The Bartered Bride,movie,1913,\N,\N
+tt0002669,The Battle of Gettysburg,movie,1913,48,"Drama,War"
+tt0002670,The Battle of Shiloh,movie,1913,\N,"Drama,War"
+tt0002676,El bello Arturo,movie,1913,\N,Comedy
+tt0002679,Bianco contro negro,movie,1913,\N,\N
+tt0002685,Blodets röst,movie,1913,89,Drama
+tt0002722,Buch i Trøjen,movie,1913,\N,\N
+tt0002725,Buried Alive in a Coal Mine,movie,1913,\N,Drama
+tt0002727,Bøffen og bananen,movie,1913,\N,\N
+tt0002735,Le camée,movie,1913,\N,\N
+tt0002739,Carmen,movie,1914,\N,\N
+tt0002743,El Caín moderno,movie,1913,48,\N
+tt0002746,Checkers,movie,1913,\N,"Comedy,Drama"
+tt0002751,A Chopin Nocturne,movie,1913,\N,Drama
+tt0002763,Corazón de presidiario,movie,1913,\N,\N
+tt0002764,Corrida de feria de las fiestas del Pilar,movie,1913,\N,\N
+tt0002765,Corrida de toros en Calatayud,movie,1913,\N,\N
+tt0002767,The Count of Monte Cristo,movie,1913,69,"Drama,History"
+tt0002771,El crimen del otro,movie,1913,\N,\N
+tt0002772,The Criminal Path,movie,1914,\N,"Crime,Drama"
+tt0002785,La dame de Monsoreau,movie,1913,\N,\N
+tt0002790,De muerte a vida,movie,1913,\N,\N
+tt0002798,Le dernier pardon,movie,1913,\N,Comedy
+tt0002799,Desastre do Monoplano Gnome na Amadora,movie,1913,\N,Documentary
+tt0002801,The Black Diamond,movie,1913,50,\N
+tt0002820,East Lynne,movie,1913,69,Drama
+tt0002822,What 80 Million Women Want,movie,1913,56,Drama
+tt0002823,Die Eisbraut,movie,1913,\N,\N
+tt0002832,Evangeline,movie,1914,50,Drama
+tt0002833,Evinrude,movie,1913,\N,"Crime,Drama"
+tt0002844,Fantômas: In the Shadow of the Guillotine,movie,1913,54,"Crime,Drama"
+tt0002857,Uma Ferra em Salvaterra de Magos,movie,1913,\N,Documentary
+tt0002858,Fiestas en Palafrugell,movie,1913,\N,\N
+tt0002859,The Fight for Millions,movie,1913,\N,Drama
+tt0002880,The Four Devils,movie,1913,\N,\N
+tt0002883,Les frères ennemis,movie,1913,\N,\N
+tt0002885,From Dusk to Dawn,movie,1913,90,Drama
+tt0002886,La fuerza del destino,movie,1913,\N,\N
+tt0002888,Fulano de Tal se enamora de Manón,movie,1916,\N,Comedy
+tt0002898,"Germinal; or, The Toll of Labor",movie,1913,150,Drama
+tt0002901,The Girl of the Sunny South,movie,1913,\N,Drama
+tt0002916,Die große Sünderin,movie,1914,\N,\N
+tt0002917,Brother Against Brother,movie,1913,51,Drama
+tt0002922,Hamlet,movie,1913,64,Drama
+tt0002928,Hasard,movie,1913,\N,\N
+tt0002953,"Herrerín y Ballesteros, en Alagón",movie,1913,\N,\N
+tt0002958,El hijo del mar,movie,1913,\N,\N
+tt0002973,Dr. Mawson in the Antarctic,movie,1913,68,Documentary
+tt0002975,L'homme qui assassina,movie,1913,\N,\N
+tt0002977,Za chest' russkogo znameni,movie,1913,\N,Drama
+tt0002978,Hoodman Blind,movie,1913,50,Drama
+tt0002987,"How Fine, How Fresh the Roses Were",movie,1913,\N,Romance
+tt0002996,My Husband's Getting Married,movie,1913,\N,Comedy
+tt0003002,The Firefly,movie,1913,47,Drama
+tt0003006,In the Bishop's Carriage,movie,1913,50,"Crime,Drama"
+tt0003008,In the Stretch,movie,1913,\N,Drama
+tt0003010,"Incendio en el barrio de Montemolín, Zaragoza",movie,1913,\N,\N
+tt0003014,Ingeborg Holm,movie,1913,96,Drama
+tt0003015,Die Insel der Seligen,movie,1913,49,"Comedy,Fantasy"
+tt0003022,Ivanhoe,movie,1913,53,"Adventure,Drama,Romance"
+tt0003024,Jack London's Adventures in the South Sea Islands,movie,1913,\N,Documentary
+tt0003037,Fantomas: The Man in Black,movie,1913,61,"Crime,Drama"
+tt0003039,The Keys to Happiness,movie,1913,\N,Drama
+tt0003042,Kleiner Svend und seine Mutter,movie,1913,\N,Drama
+tt0003048,A Lady of Quality,movie,1913,50,Drama
+tt0003051,Die Landstraße,movie,1913,\N,\N
+tt0003053,Laura y sus pretendientes,movie,1913,\N,\N
+tt0003056,Leah Kleschna,movie,1913,\N,"Crime,Drama"
+tt0003058,The Legend of Provence,movie,1913,\N,Drama
+tt0003070,The Lipton Cup: Introducing Sir Thomas Lipton,movie,1913,\N,"Drama,Sport"
+tt0003076,Livets konflikter,movie,1913,64,Drama
+tt0003084,The Lotus Dancer,movie,1913,\N,Drama
+tt0003098,The Lure of New York,movie,1913,\N,Drama
+tt0003100,La luz que vuelve,movie,1913,\N,\N
+tt0003102,Love Everlasting,movie,1914,90,Drama
+tt0003108,Macbeth,movie,1913,50,"Crime,Drama"
+tt0003113,Mala raza,movie,1913,101,\N
+tt0003116,The Man from the Golden West,movie,1913,\N,Western
+tt0003124,Los marinos de papel,movie,1913,\N,\N
+tt0003131,War Is Hell,movie,1914,50,"Drama,War"
+tt0003139,Mexican War Pictures,movie,1913,\N,Documentary
+tt0003140,Mexican War Pictures,movie,1913,\N,Documentary
+tt0003143,Mijntje en Trijntje,movie,1913,\N,\N
+tt0003150,Miraklet,movie,1913,100,Drama
+tt0003159,"Les Misérables, Part 2: Fantine",movie,1913,300,Drama
+tt0003160,El modelo de virtudes,movie,1913,\N,\N
+tt0003165,Fantômas: The Dead Man Who Killed,movie,1913,90,"Crime,Drama,Mystery"
+tt0003167,"Home, Sweet Home",movie,1914,55,Drama
+tt0003171,Moths,movie,1913,\N,Drama
+tt0003218,Novillada de beneficencia en Zaragoza,movie,1913,\N,\N
+tt0003227,"The Girl from Abroad; or, The Great Underworld",movie,1913,54,Drama
+tt0003230,The Old Armchair,movie,1913,\N,\N
+tt0003240,On the Steps of the Throne,movie,1913,\N,\N
+tt0003241,One Hundred Years of Mormonism,movie,1913,90,"Drama,History"
+tt0003243,The Orphan,movie,1913,\N,\N
+tt0003267,"The Pendleton, Oregon, Round-Up",movie,1913,\N,Documentary
+tt0003287,Pommy Arrives in Australia,movie,1913,\N,Comedy
+tt0003289,The Port of Doom,movie,1913,\N,Drama
+tt0003294,Primera comunión de las alumnas de las Escuelas Pías,movie,1913,\N,\N
+tt0003298,A Princess of Bagdad,movie,1913,\N,"Drama,Fantasy"
+tt0003299,A Prisoner in the Harem,movie,1913,\N,Drama
+tt0003301,The Prisoner of Zenda,movie,1913,55,Adventure
+tt0003305,The Secret of the Well,movie,1914,\N,\N
+tt0003306,På livets ödesvägar,movie,1913,57,Drama
+tt0003309,Captive Souls,movie,1914,99,\N
+tt0003316,The Rattlesnake,movie,1913,56,Western
+tt0003324,A Regiment of Two,movie,1913,57,"Comedy,Drama"
+tt0003330,The Life of Richard Wagner,movie,1913,110,"Biography,Drama,History"
+tt0003334,The Road to Ruin,movie,1913,\N,Drama
+tt0003335,The Robbers,movie,1913,56,Drama
+tt0003337,Robin Hood,movie,1913,\N,Adventure
+tt0003351,Sapho,movie,1913,\N,Drama
+tt0003362,The Sea Wolf,movie,1913,70,Drama
+tt0003363,The Seed of the Fathers,movie,1913,\N,"Drama,War"
+tt0003365,Shadows of the Moulin Rouge,movie,1913,60,Drama
+tt0003366,The Shame of the Empire State,movie,1913,\N,Drama
+tt0003367,The Shattered Vase,movie,1913,\N,Drama
+tt0003376,Silvia Silombra,movie,1913,\N,\N
+tt0003378,A Sister to Carmen,movie,1913,\N,Drama
+tt0003379,Sixty Years a Queen,movie,1913,\N,Biography
+tt0003386,Sodoms Ende,movie,1913,\N,Drama
+tt0003387,The Sparrow,movie,1914,\N,\N
+tt0003390,Ein Sommernachtstraum in unserer Zeit,movie,1914,\N,\N
+tt0003394,Den sorte familie,movie,1914,\N,\N
+tt0003404,The Star of India,movie,1913,\N,Drama
+tt0003406,Statistinnen des Lebens,movie,1913,\N,\N
+tt0003414,The Stranglers of Paris,movie,1913,\N,"Crime,Drama"
+tt0003419,The Student of Prague,movie,1913,85,"Drama,Fantasy,Horror"
+tt0003423,Die Sumpfblume,movie,1913,53,\N
+tt0003431,Die Tangokönigin,movie,1913,60,\N
+tt0003438,Ten Nights in a Barroom,movie,1913,\N,Drama
+tt0003441,The Terrible Vengeance,movie,1913,\N,\N
+tt0003442,Tess of the D'Urbervilles,movie,1913,\N,"Drama,Romance"
+tt0003449,The Third Degree,movie,1913,\N,Drama
+tt0003456,Through Fire and Air,movie,1913,\N,\N
+tt0003464,The Tonopah Stampede for Gold,movie,1913,\N,Western
+tt0003465,Tonto de la huerta,movie,1913,\N,\N
+tt0003469,Tortures Within Prison Walls,movie,1913,\N,Drama
+tt0003470,A Tourada dos Casimiros,movie,1913,\N,Documentary
+tt0003471,Traffic in Souls,movie,1913,88,"Crime,Drama"
+tt0003472,Trampa y cartón,movie,1913,\N,\N
+tt0003489,The Last Days of Pompeii,movie,1913,88,"Adventure,Drama"
+tt0003493,Ungarische Rhapsodie,movie,1913,\N,\N
+tt0003502,A Venetian Night,movie,1914,52,\N
+tt0003504,Der Verführte,movie,1913,54,\N
+tt0003506,The Vicar of Wakefield,movie,1913,\N,Drama
+tt0003507,The Vicar of Wakefield,movie,1913,\N,Drama
+tt0003508,Victory,movie,1913,\N,War
+tt0003510,Volunteer Organist,movie,1913,\N,Drama
+tt0003511,The Vortex of Fate,movie,1913,\N,\N
+tt0003545,Who Will Marry Mary?,movie,1913,\N,"Action,Adventure"
+tt0003561,With General Pancho Villa in Mexico,movie,1913,\N,\N
+tt0003565,Where Is Coletti?,movie,1913,86,"Comedy,Crime"
+tt0003576,The Wreck,movie,1913,48,Drama
+tt0003584,"The $5, 000, 000 Counterfeiting Plot",movie,1914,\N,"Crime,Thriller"
+tt0003587,'Round the World in 80 Days,movie,1914,\N,Adventure
+tt0003589,0-18 or A Message from the Sky,movie,1914,\N,"Crime,Drama"
+tt0003590,A 300 éves ember,movie,1914,\N,\N
+tt0003593,Across America by Motor Car,movie,1914,\N,Documentary
+tt0003595,Across the Pacific,movie,1914,50,"Adventure,Drama,Romance"
+tt0003596,The Active Life of Dolly of the Dailies,movie,1914,170,Drama
+tt0003597,Adoptivkind,movie,1914,\N,\N
+tt0003598,The Adventures of Andy Clark,movie,1914,\N,"Adventure,Comedy"
+tt0003599,The Adventures of Buffalo Bill,movie,1917,\N,"Documentary,Western"
+tt0003600,The Adventures of Kitty Cobb,movie,1914,\N,Adventure
+tt0003602,The Adventures of a Diplomatic Freelance,movie,1914,\N,\N
+tt0003605,After the Ball,movie,1914,\N,Drama
+tt0003606,Aftermath,movie,1914,\N,Drama
+tt0003608,El alcalde de Zalamea,movie,1914,\N,\N
+tt0003609,Alexandra,movie,1914,\N,"Drama,Romance"
+tt0003610,Alexia o La niña del misterio,movie,1916,\N,\N
+tt0003613,Alone in New York,movie,1914,\N,"Crime,Drama"
+tt0003617,America,movie,1914,\N,Adventure
+tt0003619,Amigas siempre,movie,1914,\N,\N
+tt0003622,Love of Perdition,movie,1914,\N,Drama
+tt0003623,Amor de pescadora,movie,1914,\N,\N
+tt0003625,Anna Karenina,movie,1914,\N,Drama
+tt0003629,Apuntes de la fiesta de la flor,movie,1914,\N,Documentary
+tt0003630,Golddigger,movie,1914,\N,Western
+tt0003631,Aristocracy,movie,1914,\N,Drama
+tt0003632,Arme Eva,movie,1916,\N,Drama
+tt0003634,As Ye Sow,movie,1914,50,Drama
+tt0003637,Assunta Spina,movie,1915,72,Drama
+tt0003639,At the Cross Roads,movie,1914,\N,Drama
+tt0003643,The Avenging Conscience: or 'Thou Shalt Not Kill',movie,1914,78,"Crime,Drama,Horror"
+tt0003651,Badehotellet,movie,1915,\N,Drama
+tt0003654,Bandits of the Border Mine,movie,1914,\N,Drama
+tt0003655,The Banker's Daughter,movie,1914,\N,Drama
+tt0003657,The Bargain,movie,1914,70,Western
+tt0003663,Battle of Gettysgoat,movie,1914,\N,Comedy
+tt0003664,The Battle of Love,movie,1914,\N,Drama
+tt0003665,The Battle of the Sexes,movie,1914,50,Drama
+tt0003668,Beating Back,movie,1914,60,"Adventure,Biography,Western"
+tt0003669,A becsapott újságíró,movie,1915,\N,\N
+tt0003670,Behind the Scenes,movie,1914,75,Drama
+tt0003672,La Belle Russe,movie,1914,\N,Drama
+tt0003675,The Beloved Adventurer,movie,1914,450,Adventure
+tt0003676,Beneath the Czar,movie,1914,\N,Drama
+tt0003677,The Better Man,movie,1914,\N,Drama
+tt0003685,Det blaa vidunder,movie,1915,\N,Comedy
+tt0003686,The Boer War,movie,1914,\N,Drama
+tt0003688,The Book of Nature,movie,1914,\N,Documentary
+tt0003689,Born Again,movie,1914,\N,Drama
+tt0003692,The Boundary Rider,movie,1914,\N,Adventure
+tt0003693,A Boy and the Law,movie,1913,\N,Drama
+tt0003698,Brewster's Millions,movie,1914,\N,Comedy
+tt0003724,In the Days of the Thundering Herd,movie,1914,48,Western
+tt0003730,The Burglar and the Lady,movie,1914,\N,"Crime,Drama"
+tt0003731,Burning Daylight: The Adventures of 'Burning Daylight' in Alaska,movie,1914,50,"Adventure,Drama"
+tt0003732,Burning Daylight: The Adventures of 'Burning Daylight' in Civilization,movie,1914,50,Drama
+tt0003735,Bánk bán,movie,1915,\N,\N
+tt0003736,C.O.D.,movie,1914,\N,Comedy
+tt0003737,Cabalgata de los mercados en Barcelona,movie,1914,\N,Documentary
+tt0003738,El caballero Casarroja,movie,1914,\N,\N
+tt0003740,Cabiria,movie,1914,148,"Adventure,Drama,History"
+tt0003742,Calatayud en fiestas,movie,1914,\N,Documentary
+tt0003743,The Call of the North,movie,1914,\N,"Adventure,Drama"
+tt0003744,Called Back,movie,1914,\N,Drama
+tt0003746,El calvario de un héroe,movie,1914,\N,\N
+tt0003747,Cameo Kirby,movie,1914,50,"Action,Drama,Romance"
+tt0003748,Captain Alvarez,movie,1914,60,Drama
+tt0003749,The Captain Besley Expedition,movie,1914,\N,Documentary
+tt0003752,Captain Swift,movie,1914,\N,Drama
+tt0003754,The Capture of a Sea Elephant and Hunting Wild Game in the South Pacific Islands,movie,1914,\N,Documentary
+tt0003756,Cardinal Richelieu's Ward,movie,1914,\N,Drama
+tt0003757,Catástrofe de Aguilón,movie,1914,\N,Documentary
+tt0003761,A Celebrated Case,movie,1914,\N,Drama
+tt0003763,Charlotte Corday,movie,1914,\N,"Drama,History"
+tt0003764,La chavala,movie,1914,\N,\N
+tt0003765,The Chechako,movie,1914,\N,Drama
+tt0003768,The Chimes,movie,1914,50,"Drama,Fantasy"
+tt0003771,The Christian,movie,1914,80,Drama
+tt0003772,Cinderella,movie,1914,52,"Drama,Fantasy"
+tt0003774,The Circus Man,movie,1914,50,Drama
+tt0003779,"Cocaine Traffic; or, the Drug Terror",movie,1914,\N,Drama
+tt0003780,The Colosseum in Films,movie,1914,\N,Documentary
+tt0003790,The Coming Power,movie,1914,\N,Drama
+tt0003791,Common Beasts of Africa,movie,1914,\N,Documentary
+tt0003792,The Conspiracy,movie,1914,\N,"Drama,Mystery"
+tt0003798,The Country Mouse,movie,1914,\N,Comedy
+tt0003799,The County Chairman,movie,1914,\N,"Comedy,Drama"
+tt0003802,The Criminal Code,movie,1914,\N,Drama
+tt0003804,The Crucible,movie,1914,\N,"Drama,Romance"
+tt0003806,Crushed,movie,1914,\N,\N
+tt0003807,El cuervo del campamento,movie,1914,\N,\N
+tt0003808,La cueva vengadora,movie,1914,\N,Drama
+tt0003815,Damaged Goods,movie,1914,\N,Drama
+tt0003816,Damon and Pythias,movie,1914,100,Drama
+tt0003817,Dan,movie,1914,\N,"Drama,War"
+tt0003820,The Dancer and the King,movie,1914,50,Drama
+tt0003822,La danza fatal,movie,1915,58,\N
+tt0003825,The Daughters of Men,movie,1914,\N,Drama
+tt0003830,Detective Craig's Coup,movie,1914,\N,"Crime,Drama"
+tt0003831,The Detective Queen,movie,1914,\N,Drama
+tt0003832,La deuda del pasado,movie,1914,\N,\N
+tt0003836,Diego Corrientes,movie,1914,\N,\N
+tt0003838,The Dishonored Medal,movie,1914,\N,Adventure
+tt0003840,Doc,movie,1914,\N,Western
+tt0003854,Dodge City Trail,movie,1936,56,"Drama,Music,Western"
+tt0003856,The Dollar Mark,movie,1914,50,Drama
+tt0003859,Dope,movie,1914,\N,Drama
+tt0003866,Un drama en Aragón,movie,1914,\N,\N
+tt0003867,Un drama en la montaña,movie,1914,\N,\N
+tt0003870,Judge Not,movie,1914,57,Drama
+tt0003871,The Eagle's Mate,movie,1914,\N,Drama
+tt0003874,La echadora de cartas,movie,1914,\N,\N
+tt0003875,The Education of Mr. Pipp,movie,1914,\N,Comedy
+tt0003878,O Embarque das Tropas Expedicionárias para Angola e Moçambique,movie,1914,\N,Documentary
+tt0003883,L'enfant de Paris,movie,1913,124,"Crime,Drama"
+tt0003884,Engelein,movie,1914,49,Comedy
+tt0003886,Enoch Arden,movie,1914,\N,Drama
+tt0003887,Entre ruinas,movie,1914,\N,\N
+tt0003888,The Envoy Extraordinary,movie,1914,\N,Drama
+tt0003889,Erstarrte Liebe,movie,1914,\N,\N
+tt0003890,The Escape,movie,1914,60,Drama
+tt0003891,Escaped from Siberia,movie,1914,\N,Drama
+tt0003893,Even Unto Death,movie,1914,\N,Drama
+tt0003897,The Exploits of Elaine,movie,1914,220,Action
+tt0003924,Facing the Gattling Guns,movie,1914,\N,Drama
+tt0003925,A Factory Magdalen,movie,1914,\N,Drama
+tt0003929,Fantasma,movie,1914,\N,Fantasy
+tt0003930,Fantomas: The Mysterious Finger Print,movie,1914,59,"Crime,Drama"
+tt0003935,The Fatal Night,movie,1914,\N,"Drama,History"
+tt0003938,The Fates and Flora Fourflush,movie,1914,\N,Comedy
+tt0003951,Fatum,movie,1915,70,\N
+tt0003952,Fantômas: The False Magistrate,movie,1914,70,"Crime,Drama"
+tt0003954,La festa del Blat,movie,1914,\N,\N
+tt0003955,Fiestas del Coso Blanco en Tarragona,movie,1914,\N,Documentary
+tt0003957,"A Fight for Freedom; or, Exiled to Siberia",movie,1914,\N,Drama
+tt0003958,The Fight for the Great Black Diamond,movie,1914,\N,\N
+tt0003960,Loyalty,movie,1914,68,\N

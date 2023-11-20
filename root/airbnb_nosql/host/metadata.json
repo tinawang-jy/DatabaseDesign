@@ -1,0 +1,14 @@
+{
+    "table_name": "host",
+    "columns": [
+        "",
+        "host_id",
+        "host_name",
+        "host_response_time",
+        "host_response_rate",
+        "host_acceptance_rate",
+        "host_total_listings_count"
+    ],
+    "primary key": "host_id",
+    "foreign key": []
+}

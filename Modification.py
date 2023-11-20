@@ -220,6 +220,7 @@ class Updater:
             # check table exist
             tb_names = []
             for tb in self.table_info:
+                print(tb)
                 tb_names.append(tb["table_name"])
             if self.table_name not in tb_names:
                 print(f"Table {self.table_name} doesn't exist.")
@@ -272,7 +273,7 @@ class Updater:
         file_extension = '.json' if dbtype == 'nosql' else '.csv'
         for file_name in os.listdir(path):
             file_path = os.path.join(path, file_name)
-            if os.path.isfile(file_path) and file_path.lower().endswith(file_extension):
+            if os.path.isfile(file_path) and file_path.lower().endswith(file_extension) and ('metadata' not in file_path):
                 if dbtype == 'nosql':
                     with open(file_path, 'r+', encoding='utf-8') as file:
                         data = json.load(file)
@@ -373,7 +374,8 @@ class Updater:
                         for record in data:
                             if self.condition['variable'] in record:
                                 filter_passes = ops[self.condition['method']](record[self.condition['variable']], self.condition['value'])
-                                if filter_passes:
+
+                                if filter_passes is True:
                                     record[self.target_condition['target']] = self.target_condition['value']
 
                             updated_data.append(record)

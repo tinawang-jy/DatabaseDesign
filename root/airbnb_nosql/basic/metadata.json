@@ -1,0 +1,15 @@
+{
+    "table_name": "basic",
+    "columns": [
+        "",
+        "id",
+        "name",
+        "host_id",
+        "price",
+        "minimum_nights",
+        "maximum_nights",
+        "availability_365"
+    ],
+    "primary key": "id",
+    "foreign key": []
+}
