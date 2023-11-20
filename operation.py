@@ -221,28 +221,28 @@ class Operator:
 if __name__ == "__main__":
     operator = Operator()
 
-    db_path = 'airbnb_sample_1/'
+    db_path = ''
     #database_directory = 'Relational/airbnb_sample/'
 
-    proj_result = operator.projection("host", ["host_id", "host_name"], db_path)
-    proj_result_list = list(proj_result)
+    #proj_result = operator.projection("host", ["host_id", "host_name"], db_path)
+    #proj_result_list = list(proj_result)
     #print("Projection Result:", json.dumps(proj_result_list, indent=4))
 
     filter_condition = {"variable":"minimum_nights",
                         "method":">",
                         "value":"3"}
-    filter_result = operator.filtering("basic", ['id', 'name'], filter_condition, db_path)
-    filter_result_list = list(filter_result)
+    #filter_result = operator.filtering("basic", ['id', 'name'], filter_condition, db_path)
+    #filter_result_list = list(filter_result)
     #print("Filtering Result:", json.dumps(filter_result_list, indent=4))
 
     selected_columns = [{"table": "host", "column": "host_name"}, 
                         {"table": "basic", "column": "name"}]
-    #join_result = operator.join(selected_columns, "host", "host_id", "basic", "host_id", "inner", db_path)
-    #join_result_list = list(join_result)
+    join_result = operator.join(selected_columns, "host", "host_id", "basic", "host_id", "inner", db_path)
+    join_result_list = list(join_result)
     #print("Join Result:", json.dumps(join_result_list, indent=4))
     
-    group_agg_result = operator.group_agg("basic", "minimum_nights", "SUM", "price", db_path)
+    #group_agg_result = operator.group_agg("basic", "minimum_nights", "SUM", "price", db_path)
     #print("Aggregation & Grouping Result:", json.dumps(group_agg_result, indent=4))
 
-    order_result = operator.ordering("basic", "minimum_nights", "ASC", db_path)
+    #order_result = operator.ordering("basic", "minimum_nights", "ASC", db_path)
     #print("Ordering Result", json.dumps(order_result, indent=4))

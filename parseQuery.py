@@ -130,8 +130,7 @@ class QueryParser:
                                 "self_column":item[0],
                                 "ref_table":item[1],
                                 "ref_column":item[2]})
-            
-            
+                 
             return {
                 "query_type": "import_table",
                 "table_name": match.group(1),
@@ -146,8 +145,6 @@ class QueryParser:
                 "query_type": "drop_table",
                 "table_name": match.group(1)
             }
-
-
         
         elif re.match(self.projection_pattern, query, re.IGNORECASE):
             match = re.match(self.projection_pattern, query)
@@ -196,7 +193,7 @@ class QueryParser:
                 "left_table": join_match.group(1),
                 "left_column": join_match.group(2),
                 "right_table": join_match.group(3),
-                "right_column": join_match.group(3),
+                "right_column": join_match.group(4),
                 "join_method": match.group(3),
             }
         
@@ -217,7 +214,7 @@ class QueryParser:
                 "table_name": match.group(2),
                 "columns": [col.strip() for col in match.group(1).split(",")],
                 "order_by_column": match.group(3),
-                "method": match.group(4)
+                "order_method": match.group(4)
             }
 
         
