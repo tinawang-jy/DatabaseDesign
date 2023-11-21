@@ -28,7 +28,7 @@ SuperDB is an interactive command-line interface (CLI) database management syste
 - Group and aggregate: `FIND <COUNT|SUM|MEAN|MIN|MAX>(minimum_nights) GROUP BY price IN TABLE basic;`
 - Order results: `FIND (id, name) IN TABLE basic ORDER BY minimum_nights <ASE|DESC>;`
 
-### Modifications
+#### Modifications
 - Use a database: `USE DATABASE airbnb NoSQL;`
 - Create a table: `CREATE TABLE sample SET (ID PRIMARY KEY, name, host_id FOREIGN KEY REF host$host_id, price);`
 - Insert data: `INSERT INTO sample(ID, name, host_id, price) VALUES (“001”, “Lovely Home”, 278008181, “500”);`
