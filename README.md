@@ -1,5 +1,5 @@
 # NoSQL and Relational Database Design
-
+Fall2023 DSCI551 Group 7 -- Jingyi Wang & Tongxin Ye
 ## Overview
 SuperDB is an interactive command-line interface (CLI) database management system. It allows users to perform a variety of database operations fro both NoSQL database and Relational database through a simple and intuitive text interface, similar to systems like MySQL or MongoDB.
 
