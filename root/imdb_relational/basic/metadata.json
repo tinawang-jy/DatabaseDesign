@@ -1,0 +1,13 @@
+{
+    "table_name": "basic",
+    "columns": [
+        "tconst",
+        "primaryTitle",
+        "titleType",
+        "startYear",
+        "runtimeMinutes",
+        "genres"
+    ],
+    "primary key": "tconst",
+    "foreign key": []
+}

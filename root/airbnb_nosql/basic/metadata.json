@@ -1,0 +1,22 @@
+{
+    "table_name": "basic",
+    "columns": [
+        "",
+        "Unnamed: 0",
+        "id",
+        "name",
+        "host_id",
+        "price",
+        "minimum_nights",
+        "maximum_nights",
+        "availability_365"
+    ],
+    "primary key": "id",
+    "foreign key": [
+        {
+            "self_column": "host_id",
+            "ref_table": "host",
+            "ref_column": "host_id"
+        }
+    ]
+}
