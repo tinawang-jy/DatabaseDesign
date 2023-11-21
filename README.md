@@ -18,7 +18,7 @@ SuperDB is an interactive command-line interface (CLI) database management syste
 
 #### Table Operations
 - Import a table: `IMPORT TABLE host FROM demoData/airbnb/host_demo.csv SET (host_id PRIMARY KEY);`
-- Import another table: `IMPORT TABLE basic FROM demoData/airbnb/basic_demo.csv SET (id PRIMARY KEY, host_id FOREIGN REF host$host_id);`
+- Import another table: `IMPORT TABLE basic FROM demoData/airbnb/basic_demo.csv SET (id PRIMARY KEY, host_id FOREIGN KEY REF host$host_id);`
 - Show all tables: `SHOW TABLES;`
 
 #### Query Operations
