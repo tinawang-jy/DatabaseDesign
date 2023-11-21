@@ -115,8 +115,11 @@ class TableManager:
                                         for info in table_info:
                                             if info['table_name'] == key['ref_table'] and info['primary key'] == key['ref_column']:
                                                 self.new_table_nosql(db_path)
+                                                break
                                             else:
-                                                print("Check your foreign key!")
+                                                print("Check your foreign key.")
+                                                break
+
 
                         elif db_path.endswith('_relational'):
                             # empty db
@@ -130,6 +133,7 @@ class TableManager:
                                         print(f'You are creating the first table in database. No table existing to refer.')
                                     else:
                                         self.new_table_relational(db_path)
+
 
                             # db not empty
                             else:
@@ -148,8 +152,11 @@ class TableManager:
                                             for info in table_info:
                                                 if info['table_name'] == key['ref_table'] and info['primary key'] == key['ref_column']:
                                                     self.new_table_relational(db_path)
+                                                    break
                                                 else:
-                                                    print("Check your foreign key!")
+                                                    print("Check your foreign key.")
+                                                    break
+
 
     def chunk_to_json(self,db_path):
         path = f'{db_path}/{self.table_name}'

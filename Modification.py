@@ -249,7 +249,8 @@ class Updater:
         return False
 
 
-    def filter_check_del(self, dbtype:str, ref_by:list, db_path):
+    def filter_check_del(self, dbtype:str, ref_by:list, db_path,filtering =False):
+
         ops = {
     '>': operator.gt,
     '<': operator.lt,
@@ -280,8 +281,8 @@ class Updater:
 
                         for record in data:
                             if record[self.condition['variable']] != "":
-                                filter = ops[self.condition['method']](int(record[self.condition['variable']].replace('“', '').replace('”', '')),int(self.condition['value'].replace('“', '').replace('”', '')))
-                            if filter and (not ref_by or not self.check_value_exist_in_ref(record[pk], ref_by, pk,dbtype)):
+                                filtering = ops[self.condition['method']](int(record[self.condition['variable']].replace('“', '').replace('”', '')), int(self.condition['value'].replace('“', '').replace('”', '')))
+                            if filtering and (not ref_by or not self.check_value_exist_in_ref(record[pk], ref_by, pk, dbtype)):
                                 continue  # Skip adding this record to updated_data
                             updated_data.append(record)
 
@@ -295,8 +296,8 @@ class Updater:
                         reader = csv.DictReader(file)
                         for row in reader:
                             if row[self.condition['variable']] != "":
-                                filter = ops[self.condition['method']](int(row[self.condition['variable']].replace('“', '').replace('”', '')),int(self.condition['value'].replace('“', '').replace('”', '')))
-                            if filter and (not ref_by or not self.check_value_exist_in_ref(row[pk], ref_by, pk,dbtype)):
+                                filtering = ops[self.condition['method']](int(row[self.condition['variable']].replace('“', '').replace('”', '')), int(self.condition['value'].replace('“', '').replace('”', '')))
+                            if filtering and (not ref_by or not self.check_value_exist_in_ref(row[pk], ref_by, pk, dbtype)):
                                 continue
                             rows_to_keep.append(row)
 
