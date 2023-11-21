@@ -11,10 +11,10 @@ SuperDB is an interactive command-line interface (CLI) database management syste
 
 ## Example Queries
 #### Database Operations
-- Create a database: `CREATE DATABASE airbnb <NoSQL|Realtional>;`
-- Use a database: `USE DATABASE airbnb <NoSQL|Realtional>;`
+- Create a database: `CREATE DATABASE airbnb <NoSQL|Relational>;`
+- Use a database: `USE DATABASE airbnb <NoSQL|Relational>;`
 - Show all databases: `SHOW DATABASE;`
-- Drop a database: `DROP DATABASE airbnb <NoSQL|Realtional>;`
+- Drop a database: `DROP DATABASE airbnb <NoSQL|Relational>;`
 
 #### Table Operations
 - Import a table: `IMPORT TABLE host FROM demoData/airbnb/host_demo.csv SET (host_id PRIMARY KEY);`
