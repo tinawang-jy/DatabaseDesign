@@ -9,6 +9,20 @@ SuperDB is an interactive command-line interface (CLI) database management syste
 - **Data Manipulation**: insert, update, delete rows and columns.
 - **Query Processing**: Support for complex queries including projection, filtering, joining, aggregation, group by and ordering.
 
+## File Structure
+### demoData files
+Airbnb data for NoSQL database testing and imdb data for Relational database testing.
+
+### .py files
+- **createDB.py**: create, use, drop databases.
+- **createTable.py**: create, import, delete tables.
+- **Modification.py**: insert, update, drop rows/columns in table.
+- **operation.py**: projectiong, filtering, ordering, joining, grouping, aggregation.
+- **join.py**: left/right/inner/outer join, merge-sort.
+- **aggregation.py**: mean, max, min, sum, count.
+- **parseQuery.py**: parse input.
+- **SuperDB-CLI.py**: User Intercation.
+
 ## Example Queries
 #### Database Operations
 - Create a database: `CREATE DATABASE airbnb <NoSQL|Relational>;`
